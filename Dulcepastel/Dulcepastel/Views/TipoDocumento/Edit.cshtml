@@ -1,0 +1,47 @@
+@model Dulcepastel.Models.tipoDocumento.TipoDocumento
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>TipoDocumento</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="TipoDocId" />
+            <div class="form-group">
+                <label asp-for="IdUserCre" class="control-label"></label>
+                <input asp-for="IdUserCre" class="form-control" />
+                <span asp-validation-for="IdUserCre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Create" class="control-label"></label>
+                <input asp-for="Create" class="form-control" />
+                <span asp-validation-for="Create" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdUserUpd" class="control-label"></label>
+                <input asp-for="IdUserUpd" class="form-control" />
+                <span asp-validation-for="IdUserUpd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Update" class="control-label"></label>
+                <input asp-for="Update" class="form-control" />
+                <span asp-validation-for="Update" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
