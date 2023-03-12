@@ -1,10 +1,10 @@
-﻿@model IEnumerable<Dulcepastel.Models.cliente.Cliente>
+﻿@model IEnumerable<Dulcepastel.Models.utility.structView.GenericView>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Clientes";
 }
 
-<h1>Index</h1>
+<h1>Clientes</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -17,6 +17,9 @@
             </th>
             <th>
                 Nombre
+            </th>
+            <th>
+                Apellido
             </th>
             <th>
                 Tipo de Documento
@@ -45,39 +48,41 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Id)
+                @item.Value1
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
+                @item.Value2
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Apellido)
+                @item.Value3
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.TipoDocId)
+                @item.Value4
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.NroDoc)
+                @item.Value5
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Direccion)
+                @item.Value6
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Celular)
+                @item.Value7
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.TelFijo)
+                @item.Value8
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Email)
+                @item.Value9
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.FNacimiento)
+                @{string fecha = item.Value10?.ToString() ?? "";
+                    fecha = fecha == "" ? fecha : fecha.Substring(0, 10);}
+                @fecha
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Value1">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Value1">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Value1">Delete</a>
             </td>
         </tr>
 }

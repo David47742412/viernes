@@ -1,6 +1,7 @@
 ﻿using Dulcepastel.Models.cliente;
 using Dulcepastel.Models.context;
 using Dulcepastel.Models.utility.interfaces;
+using Dulcepastel.Models.utility.structView;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,7 +16,7 @@ namespace Dulcepastel.Controllers.cliente
             _clienteRepository = clienteRepository;
         }
         
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
               return View( this._clienteRepository.Find());
         }

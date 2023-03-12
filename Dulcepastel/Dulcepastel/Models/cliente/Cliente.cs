@@ -1,10 +1,11 @@
 ﻿using Dulcepastel.Models.context;
 using Dulcepastel.Models.utility.interfaces;
+using Dulcepastel.Models.utility.structView;
 using Microsoft.EntityFrameworkCore;
 
 namespace Dulcepastel.Models.cliente;
 
-public class Cliente : IGeneric<Cliente>
+public class Cliente : IGeneric<Cliente, GenericView>
 {
 
     private readonly DulcepastelContext _context;
@@ -43,14 +44,53 @@ public class Cliente : IGeneric<Cliente>
         set._update = get?._update ?? set._update;
     }
 
-    public List<Cliente?> Find(params dynamic[] param)
+    public List<GenericView> Find(params dynamic[] param)
     {
-        return new List<Cliente?>(_context.Cliente.FromSqlRaw("SELECT * FROM clientes"));
+        List<GenericView> genericList = new List<GenericView>();
+        using (var command = _context.Database.GetDbConnection().CreateCommand())
+        {
+            command.CommandText = "SELECT C.cliente_id, C.cliente_nombre, C.cliente_apellido,T.tipo_documento_descripcion, C.cliente_nroDoc, C.cliente_direccion, C.cliente_celular, C.cliente_email, C.cliente_telefonoFijo, C.f_nacimiento FROM clientes C JOIN tipo_documento T ON C.tipo_documento_id = T.tipo_documento_id";
+            _context.Database.OpenConnection();
+
+            using (var result = command.ExecuteReader())
+            {
+                GenericView generic = new GenericView();
+                for (int i = 0; result.Read(); i++)
+                {
+                    generic.Value1 = result["cliente_id"];
+                    generic.Value2 = result["cliente_nombre"];
+                    generic.Value3 = result["cliente_apellido"];
+                    generic.Value4 = result["tipo_documento_descripcion"];
+                    generic.Value5 = result["cliente_nroDoc"];
+                    generic.Value6 = result["cliente_direccion"];
+                    generic.Value7 = result["cliente_celular"];
+                    generic.Value8 = result["cliente_telefonoFijo"];
+                    generic.Value9 = result["cliente_email"];
+                    generic.Value10 = result["f_nacimiento"];
+                    genericList.Insert(i,generic);
+                }
+            }
+        }
+        return genericList;
     }
 
     public string Insert(Cliente? objecto)
     {
-        return "";
+        string response = "";
+        try
+        {
+            _context.Cliente.FromSqlRaw("EXEC SP_CLIENTES " +
+                                        $"@Opc = 'N', @Cliente_id = _, @Cliente_nombre = '{objecto?._nombre ?? ""}', " +
+                                        $"@Cliente_apellido = '{objecto?._apellido ?? ""}', @TipoDocId = '{objecto?.TipoDocId}', @NroDoc = {objecto?._nroDoc ?? ""}, " +
+                                        $"@Direccion = '{objecto?._direccion ?? ""}', @Celular = {objecto?._celular ?? ""}, @TelfFijo = _, @email = _, " +
+                                        "@f_nacimiento = _, @Usuario_id_create = _, @Usuario_id_update = _, " +
+                                        "@Msj = _");
+        }
+        catch (Exception ex)
+        {
+            response = ex.Message;
+        }
+        return response;
     }
 
     public string Update(string id, Cliente? objeto)

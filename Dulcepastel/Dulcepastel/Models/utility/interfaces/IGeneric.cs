@@ -3,11 +3,11 @@ using Dulcepastel.Models.ocupacion;
 
 namespace Dulcepastel.Models.utility.interfaces;
 
-public interface IGeneric<T>
+public interface IGeneric<in T, TS>
 {
     void Equals(T? set, T? get);
 
-    List<T?> Find(params dynamic[] param);
+    List<TS> Find(params dynamic[] param);
 
     string Insert(T? objecto);
 

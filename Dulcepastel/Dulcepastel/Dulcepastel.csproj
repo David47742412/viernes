@@ -23,7 +23,6 @@
     <Folder Include="Areas\OcupacionController\Models" />
     <Folder Include="Areas\OcupacionController\Views" />
     <Folder Include="Controllers\ocupacion" />
-    <Folder Include="Models\utility" />
   </ItemGroup>
 
 </Project>
