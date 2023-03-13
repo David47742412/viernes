@@ -1,8 +1,6 @@
 using Dulcepastel.Models.cliente;
-using Dulcepastel.Models.context;
 using Dulcepastel.Models.tipoDocumento;
-using Dulcepastel.Models.utility.interfaces;
-using Microsoft.EntityFrameworkCore;
+using Dulcepastel.Models.utility.context;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,9 +9,12 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<Cliente>();
 builder.Services.AddScoped<TipoDocumento>();
 
-builder.Services.AddDbContext<DulcepastelContext>(options =>
+builder.Services.AddSingleton(DulcepastelContext.GetInstance(builder.Configuration.GetConnectionString("conexion")!));
+builder.Services.AddMvc().AddRazorPagesOptions(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("conexion"));
+    options.RootDirectory = "/Login";
+    options.Conventions.AddPageRoute("/Home", "");
+    
 });
 
 var app = builder.Build();

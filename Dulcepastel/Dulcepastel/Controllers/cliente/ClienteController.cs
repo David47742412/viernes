@@ -1,5 +1,4 @@
 ﻿using Dulcepastel.Models.cliente;
-using Dulcepastel.Models.context;
 using Dulcepastel.Models.utility.interfaces;
 using Dulcepastel.Models.utility.structView;
 using Microsoft.AspNetCore.Mvc;
@@ -18,7 +17,7 @@ namespace Dulcepastel.Controllers.cliente
         
         public IActionResult Index()
         {
-              return View( this._clienteRepository.Find());
+              return View( _clienteRepository.Find());
         }
         /*
         public async Task<IActionResult> Details(string id)

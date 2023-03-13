@@ -1,6 +1,7 @@
-﻿using System.Data;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Data;
 using System.Data.Common;
-using Dulcepastel.Models.context;
+using Dulcepastel.Models.utility.context;
 using Dulcepastel.Models.utility.interfaces;
 using Dulcepastel.Models.utility.structView;
 using Microsoft.Data.SqlClient;
@@ -11,27 +12,27 @@ namespace Dulcepastel.Models.cliente;
 public class Cliente : IGeneric<Cliente, GenericView>
 {
 
-    private readonly DulcepastelContext _context;
-    
-    public Cliente(DulcepastelContext context)
-    {
-        _context = context;
-    }
-    
+    [Key]
     private string? _id;
+    [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _nombre;
+    [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _apellido;
+    [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _tipoDocId;
+    [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _nroDoc;
+    [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _direccion;
+    [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _celular;
+    [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _telFijo;
+    [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _email;
+    [Required(ErrorMessage = "Este Campo es Requerido")]
     private DateTime? _fNacimiento;
-    private string? _idUserCre;
-    private DateTime? _create;
     private string? _iduserUpd;
-    private DateTime? _update;
 
     public void Equals(Cliente? set, Cliente? get)
     {
@@ -49,50 +50,51 @@ public class Cliente : IGeneric<Cliente, GenericView>
     public List<GenericView> Find(params dynamic[] param)
     {
         List<GenericView> genericList = new List<GenericView>();
-        using var command = _context.Database.GetDbConnection().CreateCommand();
 
-        command.CommandText = $"EXEC SP_VIEW_CLIENTES @Id = _, " +
-                              $"@Nombre = _, @Apellido = _, @DesDocument = _, " +
-                              $"@NroDoc = _, @Direccion = _, @Celular = _, " +
-                              $"@TelfFijo = _, @Email = _, @F_NACIMIENTO = ''";
-        _context.Database.OpenConnection();
-
-        using var result = command.ExecuteReader();
         GenericView generic = new GenericView();
-
-        while (result.Read())
+        
+        using (SqlConnection connection = new(DulcepastelContext.Context))
         {
-            generic.Value1 = result["cliente_id"];
-            generic.Value2 = result["cliente_nombre"];
-            generic.Value3 = result["cliente_apellido"];
-            generic.Value4 = result["tipo_documento_descripcion"];
-            generic.Value5 = result["cliente_nroDoc"];
-            generic.Value6 = result["cliente_direccion"];
-            generic.Value7 = result["cliente_celular"];
-            generic.Value8 = result["cliente_telefonoFijo"];
-            generic.Value9 = result["cliente_email"];
-            generic.Value10 = result["f_nacimiento"];
-            genericList.Add(generic);
+            using (SqlCommand command = new("SP_VIEW_CLIENTES", connection))
+            {
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.Add("@Id", SqlDbType.VarChar).Value = generic.Value1 ?? "_";
+                command.Parameters.Add("@Nombre", SqlDbType.VarChar).Value = generic.Value2 ?? "_";
+                command.Parameters.Add("@Apellido", SqlDbType.VarChar).Value = generic.Value3 ?? "_";
+                command.Parameters.Add("@DesDocument", SqlDbType.VarChar).Value = generic.Value4 ?? "_";
+                command.Parameters.Add("@NroDoc", SqlDbType.VarChar).Value = generic.Value5 ?? "_";
+                command.Parameters.Add("@Direccion", SqlDbType.VarChar).Value = generic.Value6 ?? "_";
+                command.Parameters.Add("@Celular", SqlDbType.VarChar).Value = generic.Value7 ?? "_";
+                command.Parameters.Add("@TelfFijo", SqlDbType.VarChar).Value = generic.Value8 ?? "_";
+                command.Parameters.Add("@Email", SqlDbType.VarChar).Value = generic.Value9 ?? "_";
+                command.Parameters.Add("@F_NACIMIENTO", SqlDbType.DateTime).Value = generic.Value10 ?? "1900-01-01";
+                connection.Open();
+                var result = command.ExecuteReader();
+                while (result.Read())
+                {
+                    generic.Value1 = result["cliente_id"];
+                    generic.Value2 = result["cliente_nombre"];
+                    generic.Value3 = result["cliente_apellido"];
+                    generic.Value4 = result["tipo_documento_descripcion"];
+                    generic.Value5 = result["cliente_nroDoc"];
+                    generic.Value6 = result["cliente_direccion"];
+                    generic.Value7 = result["cliente_celular"];
+                    generic.Value8 = result["cliente_telefonoFijo"];
+                    generic.Value9 = result["cliente_email"];
+                    generic.Value10 = result["f_nacimiento"];
+                    genericList.Add(generic);
+                }
+                connection.Close();
+                
+            }
         }
+        
         return genericList;
     }
 
     public string Insert(Cliente? objecto)
     {
         string response = "";
-        try
-        {
-            _context.Cliente.FromSqlRaw("EXEC SP_CLIENTES " +
-                                        $"@Opc = 'N', @Cliente_id = _, @Cliente_nombre = '{objecto?._nombre ?? ""}', " +
-                                        $"@Cliente_apellido = '{objecto?._apellido ?? ""}', @TipoDocId = '{objecto?.TipoDocId}', @NroDoc = {objecto?._nroDoc ?? ""}, " +
-                                        $"@Direccion = '{objecto?._direccion ?? ""}', @Celular = {objecto?._celular ?? ""}, @TelfFijo = _, @email = _, " +
-                                        "@f_nacimiento = _, @Usuario_id_create = _, @Usuario_id_update = _, " +
-                                        "@Msj = _");
-        }
-        catch (Exception ex)
-        {
-            response = ex.Message;
-        }
         return response;
     }
 
@@ -116,8 +118,5 @@ public class Cliente : IGeneric<Cliente, GenericView>
     public string? TelFijo { get => _telFijo; set => _telFijo = value; }
     public string? Email { get => _email; set => _email = value; }
     public DateTime? FNacimiento { get => _fNacimiento; set => _fNacimiento = value; }
-    public string? IdUserCre { get => _idUserCre; set => _idUserCre = value; }
-    public DateTime? Create { get => _create; set => _create = value; }
     public string? IduserUpd { get => _iduserUpd; set => _iduserUpd = value; }
-    public DateTime? CUpdate { get => _update; set => _update = value; }
 }

@@ -5,27 +5,19 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Dulcepastel.Models.context;
 using Dulcepastel.Models.ocupacion;
 
 namespace Dulcepastel.Controllers.ocupacion
 {
     public class OcupacionController : Controller
     {
-        private readonly DulcepastelContext _context;
-
-        public OcupacionController(DulcepastelContext context)
-        {
-            _context = context;
-        }
-
+        
         // GET: Ocupacion
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-              return _context.Ocupacion != null ? 
-                          View(await _context.Ocupacion.ToListAsync()) :
-                          Problem("Entity set 'DulcepastelContext.Ocupacion'  is null.");
+            return View();
         }
+        /*
 
         // GET: Ocupacion/Details/5
         public async Task<IActionResult> Details(string id)
@@ -159,5 +151,6 @@ namespace Dulcepastel.Controllers.ocupacion
         {
           return (_context.Ocupacion?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+        */
     }
 }

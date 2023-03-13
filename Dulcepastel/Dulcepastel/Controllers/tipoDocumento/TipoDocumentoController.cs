@@ -1,4 +1,3 @@
-using Dulcepastel.Models.context;
 using Dulcepastel.Models.tipoDocumento;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
