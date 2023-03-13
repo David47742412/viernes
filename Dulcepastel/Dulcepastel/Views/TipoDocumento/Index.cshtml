@@ -1,11 +1,11 @@
-@model IEnumerable<Dulcepastel.Models.tipoDocumento.TipoDocumento>
+@model IEnumerable<Dulcepastel.Models.utility.structView.GenericView>
 
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Tipo de Documento</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -26,15 +26,15 @@
     @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.TipoDocId)
+                @item.Value1
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Descripcion)
+                @item.Value2
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.TipoDocId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.TipoDocId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.TipoDocId">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Value1">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Value1">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Value1">Delete</a>
             </td>
         </tr>
 }

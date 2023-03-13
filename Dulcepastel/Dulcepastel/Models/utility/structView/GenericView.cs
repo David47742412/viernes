@@ -2,7 +2,7 @@
 
 namespace Dulcepastel.Models.utility.structView;
 
-public class GenericView
+public struct GenericView
 {
     private dynamic? _value1;
     private dynamic? _value2;

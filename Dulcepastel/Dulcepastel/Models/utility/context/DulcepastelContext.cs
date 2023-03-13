@@ -14,7 +14,6 @@ public partial class DulcepastelContext : DbContext
 
     public virtual DbSet<Cliente> Cliente { get; set; }
     public virtual DbSet<TipoDocumento> TipoDocumento { get; set; }
-
     public virtual DbSet<Ocupacion> Ocupacion { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

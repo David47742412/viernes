@@ -1,6 +1,9 @@
-﻿using Dulcepastel.Models.context;
+﻿using System.Data;
+using System.Data.Common;
+using Dulcepastel.Models.context;
 using Dulcepastel.Models.utility.interfaces;
 using Dulcepastel.Models.utility.structView;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace Dulcepastel.Models.cliente;
@@ -41,35 +44,35 @@ public class Cliente : IGeneric<Cliente, GenericView>
         set._telFijo = get?._telFijo ?? set._telFijo;
         set._fNacimiento = get?._fNacimiento ?? set._fNacimiento;
         set._iduserUpd = get?._iduserUpd ?? set._iduserUpd;
-        set._update = get?._update ?? set._update;
     }
 
     public List<GenericView> Find(params dynamic[] param)
     {
         List<GenericView> genericList = new List<GenericView>();
-        using (var command = _context.Database.GetDbConnection().CreateCommand())
-        {
-            command.CommandText = "SELECT C.cliente_id, C.cliente_nombre, C.cliente_apellido,T.tipo_documento_descripcion, C.cliente_nroDoc, C.cliente_direccion, C.cliente_celular, C.cliente_email, C.cliente_telefonoFijo, C.f_nacimiento FROM clientes C JOIN tipo_documento T ON C.tipo_documento_id = T.tipo_documento_id";
-            _context.Database.OpenConnection();
+        using var command = _context.Database.GetDbConnection().CreateCommand();
 
-            using (var result = command.ExecuteReader())
-            {
-                GenericView generic = new GenericView();
-                for (int i = 0; result.Read(); i++)
-                {
-                    generic.Value1 = result["cliente_id"];
-                    generic.Value2 = result["cliente_nombre"];
-                    generic.Value3 = result["cliente_apellido"];
-                    generic.Value4 = result["tipo_documento_descripcion"];
-                    generic.Value5 = result["cliente_nroDoc"];
-                    generic.Value6 = result["cliente_direccion"];
-                    generic.Value7 = result["cliente_celular"];
-                    generic.Value8 = result["cliente_telefonoFijo"];
-                    generic.Value9 = result["cliente_email"];
-                    generic.Value10 = result["f_nacimiento"];
-                    genericList.Insert(i,generic);
-                }
-            }
+        command.CommandText = $"EXEC SP_VIEW_CLIENTES @Id = _, " +
+                              $"@Nombre = _, @Apellido = _, @DesDocument = _, " +
+                              $"@NroDoc = _, @Direccion = _, @Celular = _, " +
+                              $"@TelfFijo = _, @Email = _, @F_NACIMIENTO = ''";
+        _context.Database.OpenConnection();
+
+        using var result = command.ExecuteReader();
+        GenericView generic = new GenericView();
+
+        while (result.Read())
+        {
+            generic.Value1 = result["cliente_id"];
+            generic.Value2 = result["cliente_nombre"];
+            generic.Value3 = result["cliente_apellido"];
+            generic.Value4 = result["tipo_documento_descripcion"];
+            generic.Value5 = result["cliente_nroDoc"];
+            generic.Value6 = result["cliente_direccion"];
+            generic.Value7 = result["cliente_celular"];
+            generic.Value8 = result["cliente_telefonoFijo"];
+            generic.Value9 = result["cliente_email"];
+            generic.Value10 = result["f_nacimiento"];
+            genericList.Add(generic);
         }
         return genericList;
     }

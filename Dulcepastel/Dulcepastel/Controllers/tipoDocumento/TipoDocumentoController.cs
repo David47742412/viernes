@@ -7,20 +7,18 @@ namespace Dulcepastel.Controllers.tipoDocumento
 {
     public class TipoDocumentoController : Controller
     {
-        private readonly DulcepastelContext _context;
+        private readonly TipoDocumento _tipoDocumento;
 
-        public TipoDocumentoController(DulcepastelContext context)
+        public TipoDocumentoController(TipoDocumento tipoDocumento)
         {
-            _context = context;
+            _tipoDocumento = tipoDocumento;
         }
         
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-              return _context.TipoDocumento != null ? 
-                          View(await _context.TipoDocumento.ToListAsync()) :
-                          Problem("Entity set 'DulcepastelContext.TipoDocumento'  is null.");
+            return View(_tipoDocumento.Find());
         }
-        
+        /*
         public async Task<IActionResult> Details(string id)
         {
             if (id == null || _context.TipoDocumento == null)
@@ -143,5 +141,7 @@ namespace Dulcepastel.Controllers.tipoDocumento
         {
           return (_context.TipoDocumento?.Any(e => e.TipoDocId == id)).GetValueOrDefault();
         }
+        */
     }
+    
 }

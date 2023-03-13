@@ -1,5 +1,6 @@
 using Dulcepastel.Models.cliente;
 using Dulcepastel.Models.context;
+using Dulcepastel.Models.tipoDocumento;
 using Dulcepastel.Models.utility.interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,10 +9,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<Cliente>();
+builder.Services.AddScoped<TipoDocumento>();
 
 builder.Services.AddDbContext<DulcepastelContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("conexion"))
-);
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("conexion"));
+});
 
 var app = builder.Build();
 
