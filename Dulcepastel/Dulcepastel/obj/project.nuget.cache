@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "bI/Um3MHJ2BDInT9wO/duh9xLWv6RzLyQ+38A77/yxtp/n93iAd4zkbTlrw+s5bwG8CWHIReWZGSv98d3xo43g==",
+  "dgSpecHash": "IlyaykIV8ut5Zbgb7gJ6dadLv3ufTCUmIysNqyXz2WWPmBMawz1BMkS3+jz/XKeHj7Pi0JiwF8IwyhbA2O2/EA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\Dulcepastel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASKCORP\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ASKCORP\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\ASKCORP\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\ASKCORP\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ASKCORP\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\ASKCORP\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",

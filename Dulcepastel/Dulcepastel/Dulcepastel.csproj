@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.14" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.3" />
@@ -23,6 +24,7 @@
     <Folder Include="Areas\OcupacionController\Models" />
     <Folder Include="Areas\OcupacionController\Views" />
     <Folder Include="Controllers\ocupacion" />
+    <Folder Include="Controllers\usuario" />
   </ItemGroup>
 
 </Project>
