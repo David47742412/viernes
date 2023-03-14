@@ -55,7 +55,7 @@ public class Login
                 }
             }
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             throw;
         }

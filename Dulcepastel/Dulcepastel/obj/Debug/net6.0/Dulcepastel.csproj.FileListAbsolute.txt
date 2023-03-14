@@ -314,3 +314,4 @@ C:\Users\ASKCORP\Desktop\viernes\Dulcepastel\Dulcepastel\bin\Debug\net6.0\runtim
 C:\Users\ASKCORP\Desktop\viernes\Dulcepastel\Dulcepastel\bin\Debug\net6.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\ASKCORP\Desktop\viernes\Dulcepastel\Dulcepastel\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\ASKCORP\Desktop\viernes\Dulcepastel\Dulcepastel\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\ASKCORP\Desktop\viernes\Dulcepastel\Dulcepastel\bin\Debug\net6.0\BCrypt.Net-Next.dll
