@@ -1,6 +1,8 @@
 ﻿using Azure;
 using Dulcepastel.Models.usuario;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.VisualStudio.Debugger.Contracts.HotReload;
 
 namespace Dulcepastel.Controllers.Login;
 
@@ -17,6 +19,10 @@ public class LoginController : Controller
     [HttpGet]
     public IActionResult Index()
     {
+        if (Usuario.User != null)
+        {
+            return RedirectToAction("Index", "Home", Usuario.User);
+        }
         return View();
     }
 
@@ -28,11 +34,10 @@ public class LoginController : Controller
         if (usuario is null)
         {
             ModelState.AddModelError("", "Error Credenciales no validas");
-            return View("Index");
+            return RedirectToAction("Index", "Login");
         }
-        else
-        {
-            return RedirectToAction("Index", "Home", usuario);            
-        }
+
+        Usuario.User = usuario;
+        return RedirectToAction("Index", "Home", usuario);
     }
 }

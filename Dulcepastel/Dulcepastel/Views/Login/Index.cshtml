@@ -1,4 +1,5 @@
-﻿@model Dulcepastel.Models.login.Login
+﻿@using Dulcepastel.Models.usuario
+@model Dulcepastel.Models.login.Login
 
 @{
     ViewBag.Title = "Login";
@@ -23,16 +24,18 @@
              <div class="formLogin">
                  <form asp-action="Login" method="post">
                      <div class="form-floating mb-4 col-md-4 centerInputs">
-                         <input asp-for="Email" type="email" class="form-control" id="txtEmail" placeholder="pablit@example.com" value="">
+                         <input asp-for="Email" type="email" class="form-control" id="txtEmail" placeholder=" ">
                          <label asp-for="Email" for="txtEmail">Email</label>
                          <span asp-validation-for="Email" class="text-danger"></span>
                      </div>
                      <div class="form-floating mb-4 col-md-4">
-                         <input asp-for="Password" value="" type="password" class="form-control" id="txtPassword" placeholder="4$2rdAs%$bB">
+                         <input asp-for="Password" type="password" class="form-control" id="txtPassword" placeholder=" ">
                          <label asp-for="Password" for="txtPassword">Contraseña</label>
-                         <span asp-validation-for="Password" class="text-danger"></span>
+                     <span asp-validation-for="Password" class="text-danger"></span>
                      </div>
-                     <button class="btn-dark" type="submit" id="btnIngresar">Ingresar</button>
+                     <div>
+                        <button class="btn-dark mb-4 col-md-4" type="submit" id="btnIngresar">Ingresar</button>
+                     </div>
                  </form>
              </div>
          </div>

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Dulcepastel.Models.usuario;
+using static Dulcepastel.Models.usuario.Usuario;
 
 namespace Dulcepastel.Controllers
 {
@@ -14,9 +15,14 @@ namespace Dulcepastel.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index(Usuario usuario)
+        public IActionResult Index(Usuario? usuario)
         {
-            return View(usuario);
+            if (usuario?.Id != null)
+            {
+                return View(usuario);
+            }
+
+            return RedirectToAction("Index", "Login");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

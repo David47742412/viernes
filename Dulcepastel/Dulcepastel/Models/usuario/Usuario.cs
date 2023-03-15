@@ -42,6 +42,8 @@ public class Usuario
     [Required(ErrorMessage = "El Campo Fecha de nacimiento es obligatorio")]
     private string? _fchNacimiento;
 
+    public static Usuario? User { get; set; }
+
     public string? Id
     {
         get => _id;

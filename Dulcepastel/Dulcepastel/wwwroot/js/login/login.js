@@ -2,9 +2,8 @@ const email = document.getElementById("txtEmail");
 const password = document.getElementById("txtPassword");
 const ingresar = document.getElementById("btnIngresar");
 
-email.addEventListener("input", () => {
-    ingresar.disabled = email.value === "";
-    console.log(email.value)
-});
+ingresar.disabled = true;
 
-console.log("ejecutnaod")
+email.addEventListener("input", () => {
+    ingresar.disabled = email.value === '';
+});
