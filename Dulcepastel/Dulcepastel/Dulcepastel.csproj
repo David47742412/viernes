@@ -25,7 +25,6 @@
     <Folder Include="Areas\OcupacionController\Views" />
     <Folder Include="Controllers\ocupacion" />
     <Folder Include="Controllers\usuario" />
-    <Folder Include="Models\utility\interfaces\transformable" />
   </ItemGroup>
 
 </Project>

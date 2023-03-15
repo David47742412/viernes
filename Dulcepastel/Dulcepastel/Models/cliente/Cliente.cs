@@ -4,6 +4,7 @@ using System.Data.Common;
 using Dulcepastel.Models.usuario;
 using Dulcepastel.Models.utility.context;
 using Dulcepastel.Models.utility.interfaces;
+using Dulcepastel.Models.utility.interfaces.transformable.cliente;
 using Dulcepastel.Models.utility.structView;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +13,8 @@ namespace Dulcepastel.Models.cliente;
 
 public class Cliente : IGeneric<Cliente, GenericView>, IMain
 {
+
+    private readonly ClienteTransformable _transformable;
 
     [Key]
     private string? _id;
@@ -35,6 +38,11 @@ public class Cliente : IGeneric<Cliente, GenericView>, IMain
     private DateTime? _fNacimiento;
     private string? _iduserUpd;
 
+    public Cliente(ClienteTransformable transformable)
+    {
+        _transformable = transformable;
+    }
+
     public void Equals(Cliente? set, Cliente? get)
     {
         set!._nombre = get?._nombre ?? set._nombre;
@@ -52,7 +60,7 @@ public class Cliente : IGeneric<Cliente, GenericView>, IMain
     {
         List<GenericView> genericList = new List<GenericView>();
 
-        GenericView generic = new GenericView();
+        var generic = new GenericView();
 
         using var connection = new SqlConnection(DulcepastelContext.Context);
         using var command = new SqlCommand("SP_VIEW_CLIENTES", connection);
@@ -69,18 +77,9 @@ public class Cliente : IGeneric<Cliente, GenericView>, IMain
         command.Parameters.Add("@F_NACIMIENTO", SqlDbType.DateTime).Value = generic.Value10 ?? "1900-01-01"; 
         connection.Open(); 
         using var result = command.ExecuteReader(); 
-        while (result.Read()) 
+        while (result.Read())
         { 
-            generic.Value1 = result["cliente_id"];
-            generic.Value2 = result["cliente_nombre"]; 
-            generic.Value3 = result["cliente_apellido"]; 
-            generic.Value4 = result["tipo_documento_descripcion"]; 
-            generic.Value5 = result["cliente_nroDoc"]; 
-            generic.Value6 = result["cliente_direccion"]; 
-            generic.Value7 = result["cliente_celular"]; 
-            generic.Value8 = result["cliente_telefonoFijo"]; 
-            generic.Value9 = result["cliente_email"]; 
-            generic.Value10 = result["f_nacimiento"]; 
+            generic = _transformable.DbClienteTransformable(result);
             genericList.Add(generic);
         }
         connection.Close();

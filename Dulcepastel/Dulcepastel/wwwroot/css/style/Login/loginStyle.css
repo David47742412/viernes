@@ -23,3 +23,25 @@
     border-radius: 30px;
     background: #f9f9f9;
 }
+
+.PositionLabels label {
+    margin-top: 1em;
+}
+
+.centerDivWithInputs div {
+    padding-top: 1em;
+    text-align: center;
+    width: 40%;
+    margin-left: 31%;
+    margin-right: 25%;
+
+}
+
+@media only screen and (max-width: 767px), (max-height: 536px) {
+    .centerDivWithInputs div {
+        padding-top: 1em;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+}

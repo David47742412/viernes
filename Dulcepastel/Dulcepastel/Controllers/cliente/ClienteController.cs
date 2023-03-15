@@ -2,6 +2,7 @@
 using Dulcepastel.Models.tipoDocumento;
 using Dulcepastel.Models.usuario;
 using Dulcepastel.Models.utility.interfaces;
+using Dulcepastel.Models.utility.interfaces.transformable.cliente;
 using Dulcepastel.Models.utility.structView;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -11,12 +12,14 @@ namespace Dulcepastel.Controllers.cliente
     public class ClienteController : Controller
     {
         private readonly Cliente _clienteRepository;
+        private readonly ClienteTransformable _transformable;
 
-        public ClienteController(Cliente clienteRepository)
+        public ClienteController(Cliente clienteRepository, ClienteTransformable transformable)
         {
             _clienteRepository = clienteRepository;
+            _transformable = transformable;
         }
-        
+
         public IActionResult Index()
         {
               return View( _clienteRepository.Find());
@@ -25,10 +28,10 @@ namespace Dulcepastel.Controllers.cliente
         [HttpPost]
         public IActionResult Insert(GenericView cliente)
         {
-            
             if (Usuario.User != null)
             {
-                _clienteRepository.Insert(cliente);
+                var client = _transformable.Transformable(cliente, new Cliente());
+                _clienteRepository.Insert(client);
             }
             return RedirectToAction("Index", "Login");
         }

@@ -2,6 +2,8 @@ using Dulcepastel.Models.cliente;
 using Dulcepastel.Models.login;
 using Dulcepastel.Models.tipoDocumento;
 using Dulcepastel.Models.utility.context;
+using Dulcepastel.Models.utility.interfaces.transformable.cliente;
+using Dulcepastel.Models.utility.interfaces.transformable.usuario;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<Cliente>();
 builder.Services.AddScoped<TipoDocumento>();
 builder.Services.AddScoped<Login>();
+builder.Services.AddScoped<ClienteTransformable>();
+builder.Services.AddScoped<UsuarioTransformable>();
 
 builder.Services.AddSingleton(DulcepastelContext.GetInstance(builder.Configuration.GetConnectionString("conexion")!));
 builder.Services.AddMvc().AddRazorPagesOptions(options =>
