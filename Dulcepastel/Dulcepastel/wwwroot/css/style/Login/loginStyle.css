@@ -1,0 +1,29 @@
+@font-face {
+    font-family: poppins-bold;
+    src: url("../../../fonts/poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: poppins-std;
+    src: url("../../../fonts/poppins/Poppins-Regular.ttf");
+}
+
+.titleText h1 {
+    text-align: center;
+    font-family: poppins-bold, sans-serif;
+    padding-top: 1em;
+}
+
+.titleText p {
+    text-align: center;
+    font-family: poppins-std, sans-serif;
+}
+
+.centerInputs input {
+    padding: 50%;
+}
+
+.formLogin {
+    background: #f9f9f9;
+    border-radius: 30px;
+}

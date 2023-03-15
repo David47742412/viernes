@@ -1,4 +1,5 @@
 using Dulcepastel.Models.cliente;
+using Dulcepastel.Models.login;
 using Dulcepastel.Models.tipoDocumento;
 using Dulcepastel.Models.utility.context;
 
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<Cliente>();
 builder.Services.AddScoped<TipoDocumento>();
+builder.Services.AddScoped<Login>();
 
 builder.Services.AddSingleton(DulcepastelContext.GetInstance(builder.Configuration.GetConnectionString("conexion")!));
 builder.Services.AddMvc().AddRazorPagesOptions(options =>

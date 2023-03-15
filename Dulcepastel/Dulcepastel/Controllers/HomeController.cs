@@ -1,6 +1,7 @@
 ﻿using Dulcepastel.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using Dulcepastel.Models.usuario;
 
 namespace Dulcepastel.Controllers
 {
@@ -13,9 +14,9 @@ namespace Dulcepastel.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(Usuario usuario)
         {
-            return View();
+            return View(usuario);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

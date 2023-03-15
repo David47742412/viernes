@@ -9,8 +9,92 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\css\\style\\Login\\loginStyle.css",
+      "PackagePath": "staticwebassets\\css\\style\\Login\\loginStyle.css"
+    },
+    {
       "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\OFL.txt",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\OFL.txt"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ExtraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Italic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\js\\login\\login.js",
+      "PackagePath": "staticwebassets\\js\\login\\login.js"
     },
     {
       "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\js\\site.js",
@@ -243,6 +327,10 @@
     {
       "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\ASKCORP\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\resource\\imgLogin.jpg",
+      "PackagePath": "staticwebassets\\resource\\imgLogin.jpg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Dulcepastel.Microsoft.AspNetCore.StaticWebAssets.props",
