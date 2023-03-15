@@ -9,8 +9,17 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
-    <thead>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+             <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+             <title>Document</title>
+</head>
+<div class="container">
+    <table class="table table-striped-columns">
+        <thead class="table-light">
         <tr>
             <th>
                 Código
@@ -43,48 +52,53 @@
                 Fecha de Nacimiento
             </th>
         </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @item.Value1
-            </td>
-            <td>
-                @item.Value2
-            </td>
-            <td>
-                @item.Value3
-            </td>
-            <td>
-                @item.Value4
-            </td>
-            <td>
-                @item.Value5
-            </td>
-            <td>
-                @item.Value6
-            </td>
-            <td>
-                @item.Value7
-            </td>
-            <td>
-                @item.Value8
-            </td>
-            <td>
-                @item.Value9
-            </td>
-            <td>
-                @{string fecha = item.Value10?.ToString() ?? "";
-                    fecha = fecha == "" ? fecha : fecha.Substring(0, 10);}
-                @fecha
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Value1">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Value1">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Value1">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        </thead>
+        <tbody class="table-group-divider">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Value1
+                </td>
+                <td>
+                    @item.Value2
+                </td>
+                <td>
+                    @item.Value3
+                </td>
+                <td>
+                    @item.Value4
+                </td>
+                <td>
+                    @item.Value5
+                </td>
+                <td>
+                    @item.Value6
+                </td>
+                <td>
+                    @item.Value7
+                </td>
+                <td>
+                    @item.Value8
+                </td>
+                <td>
+                    @item.Value9
+                </td>
+                <td>
+                    @{string fecha = item.Value10?.ToString() ?? "";
+                        fecha = fecha == "" ? fecha : fecha.Substring(0, 10);}
+                    @fecha
+                </td>
+                <!--
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Value1">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Value1">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Value1">Delete</a>
+                </td>
+                -->
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+</html>

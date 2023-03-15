@@ -1,6 +1,8 @@
-﻿namespace Dulcepastel.Models.ocupacion;
+﻿using Dulcepastel.Models.utility.interfaces;
 
-public class Ocupacion
+namespace Dulcepastel.Models.ocupacion;
+
+public class Ocupacion : IMain
 {
     private string? _id;
     private string? _descripcion;

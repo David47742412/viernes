@@ -1,6 +1,5 @@
 using Dulcepastel.Models.tipoDocumento;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace Dulcepastel.Controllers.tipoDocumento
 {

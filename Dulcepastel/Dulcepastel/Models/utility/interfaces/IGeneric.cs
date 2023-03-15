@@ -9,7 +9,7 @@ public interface IGeneric<in T, TS>
 
     List<TS> Find(params dynamic[] param);
 
-    string Insert(T? objecto);
+    string? Insert(T? objecto);
 
     string Update(string id, T? objeto);
 

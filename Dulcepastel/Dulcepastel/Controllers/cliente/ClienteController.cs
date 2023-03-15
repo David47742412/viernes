@@ -1,4 +1,6 @@
 ﻿using Dulcepastel.Models.cliente;
+using Dulcepastel.Models.tipoDocumento;
+using Dulcepastel.Models.usuario;
 using Dulcepastel.Models.utility.interfaces;
 using Dulcepastel.Models.utility.structView;
 using Microsoft.AspNetCore.Mvc;
@@ -19,24 +21,19 @@ namespace Dulcepastel.Controllers.cliente
         {
               return View( _clienteRepository.Find());
         }
-        /*
-        public async Task<IActionResult> Details(string id)
+        
+        [HttpPost]
+        public IActionResult Insert(GenericView cliente)
         {
-            if (id == null || _context.Cliente == null)
+            
+            if (Usuario.User != null)
             {
-                return NotFound();
+                _clienteRepository.Insert(cliente);
             }
-
-            var cliente = await _context.Cliente
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (cliente == null)
-            {
-                return NotFound();
-            }
-
-            return View(cliente);
+            return RedirectToAction("Index", "Login");
         }
         
+        /*
         public IActionResult Create()
         {
             return View();

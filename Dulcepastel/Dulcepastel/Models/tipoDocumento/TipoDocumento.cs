@@ -1,10 +1,13 @@
-﻿using Dulcepastel.Models.utility.interfaces;
+﻿using System.Data;
+using Dulcepastel.Models.utility.context;
+using Dulcepastel.Models.utility.interfaces;
 using Dulcepastel.Models.utility.structView;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace Dulcepastel.Models.tipoDocumento;
 
-public class TipoDocumento : IGeneric<TipoDocumento, GenericView>
+public class TipoDocumento : IGeneric<TipoDocumento, GenericView>, IMain
 {
     public void Equals(TipoDocumento? set, TipoDocumento? get)
     {
@@ -15,11 +18,33 @@ public class TipoDocumento : IGeneric<TipoDocumento, GenericView>
     public List<GenericView> Find(params dynamic[] param)
     {
         List<GenericView> genericList = new List<GenericView>();
+        GenericView generic = new GenericView();
 
+        try
+        {
+            using var connection = new SqlConnection(DulcepastelContext.Context);
+            using var command = new SqlCommand("SP_VIEW_TIPO_DOCUMENTO", connection);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.Add("@id", SqlDbType.VarChar).Value = generic.Value1 ?? "_";
+            command.Parameters.Add("@Descripcion", SqlDbType.VarChar).Value = generic.Value2 ?? "_";
+            connection.Open();
+            using var response = command.ExecuteReader();
+            while (response.Read())
+            {
+                generic.Value1 = response["tipo_documento_id"];
+                generic.Value1 = response["tipo_documento_descripcion"];
+                genericList.Add(generic);
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
         return genericList;
     }
 
-    public string Insert(TipoDocumento? objecto)
+    public string? Insert(TipoDocumento? objecto)
     {
         throw new NotImplementedException();
     }
