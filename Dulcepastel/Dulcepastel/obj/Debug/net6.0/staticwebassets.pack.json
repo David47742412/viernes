@@ -97,6 +97,10 @@
       "PackagePath": "staticwebassets\\fonts\\poppins\\Poppins-ThinItalic.ttf"
     },
     {
+      "Id": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\js\\clientes\\clientesFind.js",
+      "PackagePath": "staticwebassets\\js\\clientes\\clientesFind.js"
+    },
+    {
       "Id": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\js\\login\\login.js",
       "PackagePath": "staticwebassets\\js\\login\\login.js"
     },

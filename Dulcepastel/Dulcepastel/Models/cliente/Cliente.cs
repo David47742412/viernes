@@ -8,6 +8,7 @@ using Dulcepastel.Models.utility.interfaces.transformable.cliente;
 using Dulcepastel.Models.utility.structView;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Dulcepastel.Models.cliente;
 
@@ -40,38 +41,19 @@ public class Cliente : IGeneric<Cliente, GenericView>
 
     public Cliente() {}
 
-    public void Equals(Cliente? set, Cliente? get)
-    {
-        set!._nombre = get?._nombre ?? set._nombre;
-        set._apellido = get?._apellido ?? set._apellido;
-        set._tipoDocId = get?._tipoDocId ?? set._tipoDocId;
-        set._nroDoc = get?._nroDoc ?? set._nroDoc;
-        set._direccion = get?._direccion ?? set._direccion;
-        set._celular = get?._celular ?? set._celular;
-        set._telFijo = get?._telFijo ?? set._telFijo;
-        set._fNacimiento = get?._fNacimiento ?? set._fNacimiento;
-        set._iduserUpd = get?._iduserUpd ?? set._iduserUpd;
-    }
-
-    public List<GenericView> Find(params dynamic[] param)
+    public List<GenericView> Find(string data, string param, bool isFecha = false)
     {
         List<GenericView> genericList = new List<GenericView>();
-
         var generic = new GenericView();
-
         using var connection = new SqlConnection(DulcepastelContext.Context);
         using var command = new SqlCommand("SP_VIEW_CLIENTES", connection);
-        command.CommandType = CommandType.StoredProcedure; 
-        command.Parameters.Add("@Id", SqlDbType.VarChar).Value = generic.Value1 ?? "_"; 
-        command.Parameters.Add("@Nombre", SqlDbType.VarChar).Value = generic.Value2 ?? "_"; 
-        command.Parameters.Add("@Apellido", SqlDbType.VarChar).Value = generic.Value3 ?? "_"; 
-        command.Parameters.Add("@DesDocument", SqlDbType.VarChar).Value = generic.Value4 ?? "_"; 
-        command.Parameters.Add("@NroDoc", SqlDbType.VarChar).Value = generic.Value5 ?? "_"; 
-        command.Parameters.Add("@Direccion", SqlDbType.VarChar).Value = generic.Value6 ?? "_"; 
-        command.Parameters.Add("@Celular", SqlDbType.VarChar).Value = generic.Value7 ?? "_"; 
-        command.Parameters.Add("@TelfFijo", SqlDbType.VarChar).Value = generic.Value8 ?? "_"; 
-        command.Parameters.Add("@Email", SqlDbType.VarChar).Value = generic.Value9 ?? "_"; 
-        command.Parameters.Add("@F_NACIMIENTO", SqlDbType.DateTime).Value = generic.Value10 ?? "1900-01-01"; 
+        command.CommandType = CommandType.StoredProcedure;
+
+        if (!data.IsNullOrEmpty() && !param.IsNullOrEmpty() && isFecha == false)
+            command.Parameters.Add($"@{param}", SqlDbType.VarChar).Value = data;
+        else if (!data.IsNullOrEmpty() && !param.IsNullOrEmpty() && isFecha)
+            command.Parameters.Add($"@{param}", SqlDbType.DateTime).Value = data;
+        
         connection.Open(); 
         using var result = command.ExecuteReader(); 
         while (result.Read())

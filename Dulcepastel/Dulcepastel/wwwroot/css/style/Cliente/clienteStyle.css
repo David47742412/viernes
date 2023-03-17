@@ -1,14 +1,85 @@
-.mainTitleText p, h1 {
-    padding: .6em;
-    text-align: center;
+@font-face {
+    font-family: poppins-bold;
+    src: url("../../../fonts/poppins/Poppins-Bold.ttf");
 }
 
-.CenterInputs div {
-    padding-bottom: 1em;
+@font-face {
+    font-family: poppins;
+    src: url("../../../fonts/poppins/Poppins-Regular.ttf");
+}
+
+.PriceInput span {
+    width: 14%;
+    background: #50d07f;
+    color: white;
+}
+
+@media only screen and (max-width: 767px) {
+    .PriceInput {
+        width: 100%;
+    }
+    .PriceInput span {
+        width: 12%;
+        background: #50d07f;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .PriceInput span {
+        width: 15%;
+        background: #50d07f;
+    }
+}
+
+.splitComponents {
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 1em;
+}
+
+.ListFindFor {
+    width: 20%;
+}
+
+.paddingTopFind  {
+    margin-top: 1em;
+}
+
+.SizeListFind {
+    margin-left: 2.5%;
+    width: 10%;
+}
+
+.splitComponents label, span {
+    padding-right: 2.5em;
+    padding-left: 3em;
+    padding-top: 2em;
+}
+
+.styleButtonAction {
+    margin-top: 2em;
+    background: #50d07f;
+    border: none;
+    margin-bottom: 2em;
+}
+
+* {
+    font-family: poppins, sans-serif;
+}
+
+.mainTitleText h1 {
+    font-family: poppins-bold, sans-serif;
+}
+
+.mainTitleText p {
+    font-family: poppins, sans-serif;
+    color: #8f8e92;
+}
+
+.mainTitleText {
+    padding: .6em;
     text-align: center;
-    margin-left: 31%;
-    width: 40%;
-    margin-right: 25%;
 }
 
 @media only screen and (max-width: 767px) {

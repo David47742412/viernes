@@ -25,20 +25,34 @@ namespace Dulcepastel.Controllers.cliente
             if (Usuario.User == null) return RedirectToAction("Index", "Login");
             return View();
         }
-        
+
+        [HttpPost]
+        public IActionResult? Action(string accion, Cliente client, string data = "", string param = "", bool isFecha = false)
+        {
+            if (Usuario.User == null) return RedirectToAction("Index", "Login");
+            if (accion == "1") this.Insert(client);
+            else if (accion == "2") this._clienteRepository.Find(data, param, isFecha);
+            return null;
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Insert(Cliente cliente)
         {
-            if (Usuario.User == null) return RedirectToAction("Index", "Login");
-            
-            
+            try
+            {
+                var message = _clienteRepository.Insert(cliente);
+                if (message != null) throw new Exception(message);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
             return RedirectToAction("Index", "Cliente");
         }
         
         /*
-        [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(string id, [Bind("Id,Nombre,Apellido,TipoDocId,NroDoc,Direccion,Celular,TelFijo,Email,FNacimiento,IdUserCre,Create,IduserUpd,Update")] Cliente cliente)
         {
             if (id != cliente.Id)

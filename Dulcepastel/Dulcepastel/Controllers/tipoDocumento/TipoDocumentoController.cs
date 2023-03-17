@@ -14,7 +14,7 @@ namespace Dulcepastel.Controllers.tipoDocumento
         
         public IActionResult Index()
         {
-            return View(_tipoDocumento.Find());
+            return View(_tipoDocumento.Find("", ""));
         }
         /*
         public async Task<IActionResult> Details(string id)

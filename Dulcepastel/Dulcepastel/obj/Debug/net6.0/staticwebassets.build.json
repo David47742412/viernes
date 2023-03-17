@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Lv/maJdmJ9dp8qyZ9eBD9zw5NddziooixNLlw1TB2hA=",
+  "Hash": "TPYYfoMX44qz+KY8dHDYB39OPEbuqqJu493IcMxcYyQ=",
   "Source": "Dulcepastel",
   "BasePath": "_content/Dulcepastel",
   "Mode": "Default",
@@ -440,6 +440,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-ThinItalic.ttf"
+    },
+    {
+      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\js\\clientes\\clientesFind.js",
+      "SourceId": "Dulcepastel",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "BasePath": "_content/Dulcepastel",
+      "RelativePath": "js/clientes/clientesFind.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\clientes\\clientesFind.js"
     },
     {
       "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\js\\login\\login.js",

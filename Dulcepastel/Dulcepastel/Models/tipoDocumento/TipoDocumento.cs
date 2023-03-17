@@ -9,13 +9,7 @@ namespace Dulcepastel.Models.tipoDocumento;
 
 public class TipoDocumento : IGeneric<TipoDocumento, GenericView>
 {
-    public void Equals(TipoDocumento? set, TipoDocumento? get)
-    {
-        set!._descripcion = get?._descripcion ?? set._descripcion;
-        set._idUserUpd = get?._idUserUpd ?? set._idUserUpd;
-    }
-
-    public List<GenericView> Find(params dynamic[] param)
+    public List<GenericView> Find(string data, string param, bool isFecha = false)
     {
         var genericList = new List<GenericView>();
         var generic = new GenericView();
