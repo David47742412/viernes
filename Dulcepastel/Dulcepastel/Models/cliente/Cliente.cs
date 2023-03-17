@@ -11,10 +11,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Dulcepastel.Models.cliente;
 
-public class Cliente : IGeneric<Cliente, GenericView>, IMain
+public class Cliente : IGeneric<Cliente, GenericView>
 {
 
-    private readonly ClienteTransformable _transformable;
+    private readonly ClienteTransformable _transformable = new();
 
     [Key]
     private string? _id;
@@ -38,10 +38,7 @@ public class Cliente : IGeneric<Cliente, GenericView>, IMain
     private DateTime? _fNacimiento;
     private string? _iduserUpd;
 
-    public Cliente(ClienteTransformable transformable)
-    {
-        _transformable = transformable;
-    }
+    public Cliente() {}
 
     public void Equals(Cliente? set, Cliente? get)
     {
@@ -79,7 +76,7 @@ public class Cliente : IGeneric<Cliente, GenericView>, IMain
         using var result = command.ExecuteReader(); 
         while (result.Read())
         { 
-            generic = _transformable.DbClienteTransformable(result);
+            generic = _transformable.Convert(result);
             genericList.Add(generic);
         }
         connection.Close();
@@ -105,11 +102,13 @@ public class Cliente : IGeneric<Cliente, GenericView>, IMain
             command.Parameters.Add("@TelfFijo", SqlDbType.VarChar).Value = objecto?._telFijo ?? "";
             command.Parameters.Add("@email", SqlDbType.VarChar).Value = objecto?._email ?? "";
             command.Parameters.Add("@f_nacimiento", SqlDbType.VarChar).Value = objecto?._email ?? "";
-            command.Parameters.Add("@Usuario_id_create", SqlDbType.VarChar).Value = Usuario.User;
-            command.Parameters.Add("@Usuario_id_update", SqlDbType.VarChar).Value = Usuario.User;
+            command.Parameters.Add("@Usuario_id_create", SqlDbType.VarChar).Value = Usuario.User?.Id;
+            command.Parameters.Add("@Usuario_id_update", SqlDbType.VarChar).Value = Usuario.User?.Id;
+            command.Parameters.Add("@Msj", SqlDbType.VarChar).Value = "";
             connection.Open();
             using var response = command.ExecuteReader();
-            message = response["Msj"] as string;
+            response.Read();
+            if (response.HasRows) message = response["Msj"] as string;
             connection.Close();
         }
         catch (Exception e)

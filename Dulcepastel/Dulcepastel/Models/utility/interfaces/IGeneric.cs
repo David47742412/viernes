@@ -5,8 +5,6 @@ namespace Dulcepastel.Models.utility.interfaces;
 
 public interface IGeneric<in T, TS>
 {
-    void Equals(T? set, T? get);
-
     List<TS> Find(params dynamic[] param);
 
     string? Insert(T? objecto);

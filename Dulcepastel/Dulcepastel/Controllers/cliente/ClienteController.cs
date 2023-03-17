@@ -22,50 +22,21 @@ namespace Dulcepastel.Controllers.cliente
 
         public IActionResult Index()
         {
-              return View( _clienteRepository.Find());
-        }
-        
-        [HttpPost]
-        public IActionResult Insert(GenericView cliente)
-        {
-            if (Usuario.User != null)
-            {
-                var client = _transformable.Transformable(cliente, new Cliente());
-                _clienteRepository.Insert(client);
-            }
-            return RedirectToAction("Index", "Login");
-        }
-        
-        /*
-        public IActionResult Create()
-        {
+            if (Usuario.User == null) return RedirectToAction("Index", "Login");
             return View();
         }
         
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,Apellido,TipoDocId,NroDoc,Direccion,Celular,TelFijo,Email,FNacimiento,IdUserCre,Create,IduserUpd,Update")] Cliente cliente)
+        public IActionResult Insert(Cliente cliente)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(cliente);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(cliente);
-        }
-
-        // GET: Cliente/Edit/5
-        public async Task<IActionResult> Edit(string id)
-        {
-            var cliente = await _context.Cliente.FindAsync(id);
-            if (cliente == null)
-            {
-                return NotFound();
-            }
-            return View(cliente);
+            if (Usuario.User == null) return RedirectToAction("Index", "Login");
+            
+            
+            return RedirectToAction("Index", "Cliente");
         }
         
+        /*
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(string id, [Bind("Id,Nombre,Apellido,TipoDocId,NroDoc,Direccion,Celular,TelFijo,Email,FNacimiento,IdUserCre,Create,IduserUpd,Update")] Cliente cliente)

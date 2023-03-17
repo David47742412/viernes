@@ -1,6 +1,12 @@
-﻿namespace Dulcepastel.Models.utility.interfaces;
+﻿using Dulcepastel.Models.cliente;
+using Dulcepastel.Models.utility.structView;
 
-public interface IMain
+namespace Dulcepastel.Models.utility.interfaces;
+
+public interface IMain<T>
 {
-    
+    IEnumerable<T> Find2 { get; set; }
+
+    T Insert { get; set; }
+
 }

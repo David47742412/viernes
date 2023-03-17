@@ -1,22 +1,87 @@
-﻿@model IEnumerable<Dulcepastel.Models.utility.structView.GenericView>
+﻿@using Dulcepastel.Models.tipoDocumento;
+@using Dulcepastel.Models.cliente;
+@model Cliente
 
 @{
     ViewData["Title"] = "Clientes";
 }
 
-<h1>Clientes</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-             <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-                         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-             <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="css/style/Cliente/clienteStyle.css"/>
+    <title>Clientes</title>
 </head>
+<body>
+<div class="mainTitleText row">
+    <h1>Color</h1>
+    <p>Añadir nuevos colores</p>
+</div>
+@{var listdocs = new TipoDocumento();}
+<div class="container">
+    <div class="backGroundForm">
+        <div class="g-4 CenterInputs">
+            <form asp-action="Insert" method="post">
+                <div class="form-floating mb-2 col-md-2">
+                    <input asp-for="Id" type="text" class="form-control" id="txtId" placeholder=" ">
+                    <label asp-for="Id" class="" for="txtId">Código</label>
+                    <span asp-validation-for="Id" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-2 col-md-3">
+                    <input asp-for="Nombre" type="text" class="form-control" id="txtNombre" placeholder=" " required>
+                    <label asp-for="Nombre" class="" for="txtNombre">Nombre</label>
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-2 col-md-3">
+                    <input asp-for="Apellido" type="text" class="form-control" id="txtApellido" placeholder=" " required>
+                    <label asp-for="Apellido" for="txtApellido">Apellido</label>
+                    <span asp-validation-for="Apellido" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-2 col-md-2">
+                    @foreach (var items in listdocs.Find())
+                    {
+                        <select asp-for="TipoDocId" type="text" class="form-control" id="listTipoDocId" placeholder=" " required>
+                            <option value="@items.Value1">
+                                @items.Value2
+                            </option>
+                        </select>
+                        <label asp-for="Apellido" for="txtApellido">Tipo de Documento</label>
+                    }
+                </div>
+                <div class="form-floating mb-2 col-md-3">
+                    <input asp-for="NroDoc" type="text" class="form-control" id="txtNroDoc" placeholder=" " required>
+                    <label asp-for="NroDoc" class="" for="txtNroDoc">N° documento</label>
+                    <span asp-validation-for="NroDoc" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-2 col-md-3">
+                    <input asp-for="Direccion" type="text" class="form-control" id="txtDireccion" placeholder=" " required>
+                    <label asp-for="Direccion" class="" for="txtDireccion">Dirección</label>
+                    <span asp-validation-for="Direccion" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-2 col-md-3">
+                    <input asp-for="Celular" type="text" class="form-control" id="txtCelular" placeholder=" " required>
+                    <label asp-for="Celular" class="" for="txtCelular">Celular</label>
+                    <span asp-validation-for="Celular" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-2 col-md-3">
+                    <input asp-for="TelFijo" type="text" class="form-control" id="txtTelfFijo" placeholder=" " required>
+                    <label asp-for="TelFijo" class="form-label" for="txtTelfFijo">Telefono Fijo</label>
+                    <span asp-validation-for="TelFijo" class="text-danger"></span>
+                </div>
+                <div class="mb-2 col-md-3">
+                    <label asp-for="FNacimiento" class="form-label">Fecha de Nacimiento</label>
+                    <input asp-for="FNacimiento" class="form-control"/>
+                    <span asp-validation-for="FNacimiento" class="text-danger"></span>
+                </div>
+                <button value="Insert" type="submit">Registrar</button>
+            </form>
+        </div>
+    </div>
+</div>
 <div class="container">
     <table class="table table-striped-columns">
         <thead class="table-light">
@@ -54,51 +119,50 @@
         </tr>
         </thead>
         <tbody class="table-group-divider">
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @item.Value1
-                </td>
-                <td>
-                    @item.Value2
-                </td>
-                <td>
-                    @item.Value3
-                </td>
-                <td>
-                    @item.Value4
-                </td>
-                <td>
-                    @item.Value5
-                </td>
-                <td>
-                    @item.Value6
-                </td>
-                <td>
-                    @item.Value7
-                </td>
-                <td>
-                    @item.Value8
-                </td>
-                <td>
-                    @item.Value9
-                </td>
-                <td>
-                    @{string fecha = item.Value10?.ToString() ?? "";
-                        fecha = fecha == "" ? fecha : fecha.Substring(0, 10);}
-                    @fecha
-                </td>
-                <!--
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Value1">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Value1">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Value1">Delete</a>
-                </td>
-                -->
-            </tr>
+        @{
+            var client = new Cliente();
+            foreach (var item in client.Find())
+            {
+                <tr>
+                    <td>
+                        @item.Value1
+                    </td>
+                    <td>
+                        @item.Value2
+                    </td>
+                    <td>
+                        @item.Value3
+                    </td>
+                    <td>
+                        @item.Value4
+                    </td>
+                    <td>
+                        @item.Value5
+                    </td>
+                    <td>
+                        @item.Value6
+                    </td>
+                    <td>
+                        @item.Value7
+                    </td>
+                    <td>
+                        @item.Value8
+                    </td>
+                    <td>
+                        @item.Value9
+                    </td>
+                    <td>
+                        @{
+                            var fecha = item.Value10?.ToString() ?? "";
+                            fecha = fecha == "" ? fecha : fecha.Substring(0, 10);
+                        }
+                        @fecha
+                    </td>
+                </tr>
+            }
         }
         </tbody>
     </table>
 </div>
+</body>
 </html>

@@ -10,7 +10,7 @@ namespace Dulcepastel.Models.login;
 public class Login
 {
 
-    private readonly UsuarioTransformable _transformable;
+    private readonly UsuarioTransformable _transformable = new ();
     
     [Required(ErrorMessage = "Este Campo es Requerido")]
     [EmailAddress(ErrorMessage = "El correo electronico no es valido")]
@@ -19,11 +19,8 @@ public class Login
     [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _password;
 
-    public Login(UsuarioTransformable transformable)
-    {
-        _transformable = transformable;
-    }
-
+    public Login() { }
+    
     public string? Email
     {
         get => _email;
@@ -48,7 +45,7 @@ public class Login
             using var result = command.ExecuteReader(); 
             result.Read();
             if (!result.HasRows) return null;
-            var usuario = _transformable.Transformable(result, new Usuario());
+            var usuario = _transformable.Convert(result);
             var password = result["usuario_password"] as string; 
             return BCrypt.Net.BCrypt.Verify(user.Password, password) ? usuario : null;
         }

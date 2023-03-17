@@ -1,0 +1,34 @@
+.mainTitleText p, h1 {
+    padding: .6em;
+    text-align: center;
+}
+
+.CenterInputs div {
+    padding-bottom: 1em;
+    text-align: center;
+    margin-left: 31%;
+    width: 40%;
+    margin-right: 25%;
+}
+
+@media only screen and (max-width: 767px) {
+    .CenterInputs div {
+        padding-bottom: 1em;
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .CenterInputs div {
+        padding-bottom: 1em;
+        margin-left: 22%;
+        width: 55%;
+    }
+}
+
+.backGroundForm {
+    background: #f9f9f9;
+    border-radius: 15px;
+}

@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Dulcepastel.Models.tipoDocumento;
 
-public class TipoDocumento : IGeneric<TipoDocumento, GenericView>, IMain
+public class TipoDocumento : IGeneric<TipoDocumento, GenericView>
 {
     public void Equals(TipoDocumento? set, TipoDocumento? get)
     {
@@ -17,9 +17,8 @@ public class TipoDocumento : IGeneric<TipoDocumento, GenericView>, IMain
 
     public List<GenericView> Find(params dynamic[] param)
     {
-        List<GenericView> genericList = new List<GenericView>();
-        GenericView generic = new GenericView();
-
+        var genericList = new List<GenericView>();
+        var generic = new GenericView();
         try
         {
             using var connection = new SqlConnection(DulcepastelContext.Context);
@@ -32,7 +31,7 @@ public class TipoDocumento : IGeneric<TipoDocumento, GenericView>, IMain
             while (response.Read())
             {
                 generic.Value1 = response["tipo_documento_id"];
-                generic.Value1 = response["tipo_documento_descripcion"];
+                generic.Value2 = response["tipo_documento_descripcion"];
                 genericList.Add(generic);
             }
         }

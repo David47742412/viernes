@@ -2,7 +2,7 @@
 
 namespace Dulcepastel.Models.ocupacion;
 
-public class Ocupacion : IMain
+public class Ocupacion
 {
     private string? _id;
     private string? _descripcion;
