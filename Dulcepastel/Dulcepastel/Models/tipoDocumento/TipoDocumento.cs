@@ -42,12 +42,12 @@ public class TipoDocumento : IGeneric<TipoDocumento, GenericView>
         throw new NotImplementedException();
     }
 
-    string IGeneric<TipoDocumento, GenericView>.Update(string id, TipoDocumento? objeto)
+    public string Update(TipoDocumento? objeto)
     {
         throw new NotImplementedException();
     }
 
-    public string Delete(string id, string idUser)
+    public string Delete(string id)
     {
         throw new NotImplementedException();
     }
@@ -83,7 +83,7 @@ public class TipoDocumento : IGeneric<TipoDocumento, GenericView>
         set => _idUserUpd = value;
     }
 
-    public DateTime? Update
+    public DateTime? Tupdate
     {
         get => _update;
         set => _update = value;

@@ -9,8 +9,8 @@ public interface IGeneric<in T, TS>
 
     string? Insert(T? objecto);
 
-    string Update(string id, T? objeto);
+    string Update(T? objeto);
 
-    string Delete(string id, string idUser);
+    string Delete(string id);
 
 }

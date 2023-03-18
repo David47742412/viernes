@@ -6,6 +6,7 @@ using Dulcepastel.Models.utility.interfaces.transformable.cliente;
 using Dulcepastel.Models.utility.structView;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Dulcepastel.Controllers.cliente
 {
@@ -30,9 +31,16 @@ namespace Dulcepastel.Controllers.cliente
         public IActionResult? Action(string accion, Cliente client, string data = "", string param = "", bool isFecha = false)
         {
             if (Usuario.User == null) return RedirectToAction("Index", "Login");
-            if (accion == "1") this.Insert(client);
-            else if (accion == "2") this._clienteRepository.Find(data, param, isFecha);
-            return null;
+            switch (accion)
+            {
+                case "1":
+                    this.Insert(client);
+                    break;
+                case "2":
+                    this._clienteRepository.Find(data, param, isFecha);
+                    break;
+            }
+            return RedirectToAction("Index");
         }
 
         [HttpPost]
@@ -42,7 +50,7 @@ namespace Dulcepastel.Controllers.cliente
             try
             {
                 var message = _clienteRepository.Insert(cliente);
-                if (message != null) throw new Exception(message);
+                if (!message.IsNullOrEmpty()) throw new Exception(message);
             }
             catch (Exception ex)
             {

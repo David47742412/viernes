@@ -102,12 +102,22 @@ public class Cliente : IGeneric<Cliente, GenericView>
         return message;
     }
 
-    public string Update(string id, Cliente? objeto)
+    public string Update(Cliente? objeto)
     {
-        return "";
+        try
+        {
+            using var connection = new SqlConnection(DulcepastelContext.Context);
+            using var command = new SqlCommand("SP_CLIENTES", connection);
+            
+            return "";
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
     }
 
-    public string Delete(string id, string idUser)
+    public string Delete(string idUser)
     {
         return "";
     }
