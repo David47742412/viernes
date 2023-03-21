@@ -1,6 +1,7 @@
 ﻿@using Dulcepastel.Models.tipoDocumento;
 @using Dulcepastel.Models.cliente;
-@model Cliente
+@using Dulcepastel.Models.utility.structView;
+@model List<GenericView>
 
 @{
     ViewData["Title"] = "Clientes";
@@ -27,55 +28,52 @@
         <div class="backGroundForm">
             <div class="row g-0">
                 <div class="form-floating mb-2 col-md-3 splitComponents">
-                    <input asp-for="Id" type="text" class="form-control" id="txtId" placeholder=" " disabled>
-                    <label asp-for="Id" class="" for="txtId">Código</label>
-                    <span asp-validation-for="Id" class="text-danger"></span>
+                    <input name="Id" type="text" class="form-control" id="txtId" placeholder=" " disabled>
+                    <label class="" for="txtId">Código</label>
                 </div>
                 <div class="form-floating mb-2 col-md-3 splitComponents">
-                    <input asp-for="Nombre" type="text" class="form-control" id="txtNombre" placeholder=" " required>
-                    <label asp-for="Nombre" class="" for="txtNombre">Nombre</label>
-                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                    <input name="Nombre" type="text" class="form-control" id="txtNombre" placeholder=" " required>
+                    <label class="" for="txtNombre">Nombre</label>
                 </div>
                 <div class="form-floating mb-2 col-md-3 splitComponents">
-                    <input asp-for="Apellido" type="text" class="form-control" id="txtApellido" placeholder=" " required>
-                    <label asp-for="Apellido" for="txtApellido">Apellido</label>
-                    <span asp-validation-for="Apellido" class="text-danger"></span>
+                    <input name="Apellido" type="text" class="form-control" id="txtApellido" placeholder=" " required>
+                    <label for="txtApellido">Apellido</label>
+                    <span class="text-danger"></span>
                 </div>
                 <div class="form-floating mb-2 col-md-3 splitComponents">
                     @foreach (var items in listdocs.Find("", ""))
                     {
-                        <select asp-for="TipoDocId" type="text" class="form-control" id="listTipoDocId" placeholder=" " required>
+                        <select name="TipoDocId" type="text" class="form-control" id="listTipoDocId" placeholder=" " required>
                             <option value="@items.Value1">
                                 @items.Value2
                             </option>
                         </select>
-                        <label asp-for="Apellido" for="txtApellido">Tipo de Documento</label>
+                        <label for="listTipoDocId">Tipo de Documento</label>
                     }
                 </div>
                 <div class="form-floating mb-2 col-md-3 splitComponents">
-                    <input asp-for="NroDoc" type="text" class="form-control" id="txtNroDoc" placeholder=" " required>
-                    <label asp-for="NroDoc" class="" for="txtNroDoc">N° documento</label>
-                    <span asp-validation-for="NroDoc" class="text-danger"></span>
+                    <input name="NroDoc" type="text" class="form-control" id="txtNroDoc" placeholder=" " required>
+                    <label class="" for="txtNroDoc">N° documento</label>
                 </div>
                 <div class="form-floating mb-2 col-md-3 splitComponents">
-                    <input asp-for="Direccion" type="text" class="form-control" id="txtDireccion" placeholder=" " required>
-                    <label asp-for="Direccion" class="" for="txtDireccion">Dirección</label>
-                    <span asp-validation-for="Direccion" class="text-danger"></span>
+                    <input name="Direccion" type="text" class="form-control" id="txtDireccion" placeholder=" " required>
+                    <label class="" for="txtDireccion">Dirección</label>
                 </div>
                 <div class="form-floating mb-2 col-md-3 splitComponents">
-                    <input asp-for="Celular" type="text" class="form-control" id="txtCelular" placeholder=" " required>
-                    <label asp-for="Celular" class="" for="txtCelular">Celular</label>
-                    <span asp-validation-for="Celular" class="text-danger"></span>
+                    <input name="Celular" type="text" class="form-control" id="txtCelular" placeholder=" " required>
+                    <label class="" for="txtCelular">Celular</label>
                 </div>
                 <div class="form-floating mb-2 col-md-3 splitComponents">
-                    <input asp-for="TelFijo" type="text" class="form-control" id="txtTelfFijo" placeholder=" " required>
-                    <label asp-for="TelFijo" class="form-label" for="txtTelfFijo">Telefono Fijo</label>
-                    <span asp-validation-for="TelFijo" class="text-danger"></span>
+                    <input name="TelFijo" type="text" class="form-control" id="txtTelfFijo" placeholder=" " required>
+                    <label class="form-label" for="txtTelfFijo">Telefono Fijo</label>
                 </div>
                 <div class="form-floating mb-2 col-md-3 splitComponents">
-                    <input asp-for="FNacimiento" class="form-control" id="dtFNacimiento"/>
-                    <label asp-for="FNacimiento" class="form-label">Fecha de Nacimiento</label>
-                    <span asp-validation-for="FNacimiento" class="text-danger"></span>
+                    <input name="Email" type="text" class="form-control" id="txtEmail" placeholder=" " required>
+                    <label class="form-label" for="txtEmail">Email</label>
+                </div>
+                <div class="form-floating mb-2 col-md-3 splitComponents">
+                    <input name="fNacimiento" type="date" class="form-control" id="dtFNacimiento"/>
+                    <label for="dtFNacimiento" class="form-label">Fecha de Nacimiento</label>
                 </div>
                 <div class="form-floating mb-2 col-md-3 splitComponents">
                     <select name="accion" type="text" class="form-control" id="listAccion" placeholder=" " required>
@@ -92,8 +90,17 @@
                             Eliminar Cliente
                         </option>
                     </select>
-                    <label asp-for="Apellido" for="txtApellido">Acción a realizar</label>
+                    <label for="txtApellido">Acción a realizar</label>
                 </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary styleButtonAction" value="Insert" type="submit" id="btnAccion">Registrar</button>
+        </div>
+    </form>
+    <form>
+        <div class="backGroundForm">
+            <div class="row g-0">
                 <div class="form-floating mb-2 col-md-3 paddingTopFind SizeListFind">
                     <select name="find" type="text" class="form-control" id="listFind" placeholder=" " required>
                         <option value="Id">
@@ -129,16 +136,14 @@
                     </select>
                     <label for="listFind">Buscar por</label>
                 </div>
-                @{
-                    <div class="form-floating mb-2 col-md-3 paddingTopFind">
-                        <input type="text" class="form-control" id="txtBuscar" placeholder=" " required>
-                        <label class="form-label" for="txtTelfFijo" id="lblFind">Ingrese el Código</label>
-                    </div>
-                }
+                <div class="form-floating mb-2 col-md-3 paddingTopFind">
+                    <input type="text" class="form-control" id="txtBuscar" placeholder=" " required>
+                    <label class="form-label" for="txtTelfFijo" id="lblFind">Ingrese el Código</label>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary styleButtonAction" value="Insert" type="submit" id="btnFind">Registrar</button>
+                </div>
             </div>
-        </div>
-        <div class="text-center">
-            <button class="btn btn-primary styleButtonAction" value="Insert" type="submit" id="btnAccion">Registrar</button>
         </div>
     </form>
 </div>
@@ -179,8 +184,7 @@
     </thead>
     <tbody class="table-group-divider">
     @{
-        var client = new Cliente();
-        @foreach (var item in client.Find("", ""))
+        @foreach (var item in Model)
         {
             <tr>
                 <td>
@@ -213,7 +217,7 @@
                 <td>
                     @{
                         var fecha = item.Value10?.ToString();
-                        fecha = fecha == "1/01/1900 00:00:00" ? "no asignado" : fecha?.Substring(0, 10);
+                        fecha = (fecha == "01/01/1900 00:00:00" ? "no asignado" : fecha?.Substring(0, 10)) ?? "no asignado";
                     }
                     @fecha
                 </td>

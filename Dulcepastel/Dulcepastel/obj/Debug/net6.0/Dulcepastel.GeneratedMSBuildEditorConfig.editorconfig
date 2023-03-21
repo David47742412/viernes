@@ -5,85 +5,84 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Dulcepastel
 build_property.RootNamespace = Dulcepastel
-build_property.ProjectDir = C:\Users\askcorp\Desktop\viernes\Dulcepastel\Dulcepastel\
+build_property.ProjectDir = /home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\askcorp\Desktop\viernes\Dulcepastel\Dulcepastel
+build_property.MSBuildProjectDirectory = /home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/askcorp/Desktop/viernes/Dulcepastel/Dulcepastel/Views/Cliente/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
+[/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/Views/Cliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/askcorp/Desktop/viernes/Dulcepastel/Dulcepastel/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/askcorp/Desktop/viernes/Dulcepastel/Dulcepastel/Views/Login/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+[/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/askcorp/Desktop/viernes/Dulcepastel/Dulcepastel/Views/Ocupacion/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2N1cGFjaW9uXENyZWF0ZS5jc2h0bWw=
+[/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/Views/Ocupacion/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2N1cGFjaW9uL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/askcorp/Desktop/viernes/Dulcepastel/Dulcepastel/Views/Ocupacion/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2N1cGFjaW9uXERlbGV0ZS5jc2h0bWw=
+[/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/Views/Ocupacion/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2N1cGFjaW9uL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/askcorp/Desktop/viernes/Dulcepastel/Dulcepastel/Views/Ocupacion/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2N1cGFjaW9uXERldGFpbHMuY3NodG1s
+[/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/Views/Ocupacion/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2N1cGFjaW9uL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/askcorp/Desktop/viernes/Dulcepastel/Dulcepastel/Views/Ocupacion/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2N1cGFjaW9uXEVkaXQuY3NodG1s
+[/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/Views/Ocupacion/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2N1cGFjaW9uL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/askcorp/Desktop/viernes/Dulcepastel/Dulcepastel/Views/Ocupacion/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2N1cGFjaW9uXEluZGV4LmNzaHRtbA==
+[/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/Views/Ocupacion/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2N1cGFjaW9uL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/askcorp/Desktop/viernes/Dulcepastel/Dulcepastel/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/askcorp/Desktop/viernes/Dulcepastel/Dulcepastel/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/askcorp/Desktop/viernes/Dulcepastel/Dulcepastel/Views/TipoDocumento/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0RvY3VtZW50b1xDcmVhdGUuY3NodG1s
+[/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/Views/TipoDocumento/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb0RvY3VtZW50by9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/askcorp/Desktop/viernes/Dulcepastel/Dulcepastel/Views/TipoDocumento/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0RvY3VtZW50b1xEZWxldGUuY3NodG1s
+[/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/Views/TipoDocumento/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb0RvY3VtZW50by9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/askcorp/Desktop/viernes/Dulcepastel/Dulcepastel/Views/TipoDocumento/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0RvY3VtZW50b1xEZXRhaWxzLmNzaHRtbA==
+[/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/Views/TipoDocumento/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb0RvY3VtZW50by9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/askcorp/Desktop/viernes/Dulcepastel/Dulcepastel/Views/TipoDocumento/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0RvY3VtZW50b1xFZGl0LmNzaHRtbA==
+[/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/Views/TipoDocumento/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb0RvY3VtZW50by9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/askcorp/Desktop/viernes/Dulcepastel/Dulcepastel/Views/TipoDocumento/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0RvY3VtZW50b1xJbmRleC5jc2h0bWw=
+[/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/Views/TipoDocumento/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGlwb0RvY3VtZW50by9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/askcorp/Desktop/viernes/Dulcepastel/Dulcepastel/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/askcorp/Desktop/viernes/Dulcepastel/Dulcepastel/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/askcorp/Desktop/viernes/Dulcepastel/Dulcepastel/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-kqlf1wko7g
+[/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-u6fbumjjus

@@ -1,4 +1,5 @@
-﻿using Dulcepastel.Models.cliente;
+﻿using System.Globalization;
+using Dulcepastel.Models.cliente;
 using Dulcepastel.Models.tipoDocumento;
 using Dulcepastel.Models.usuario;
 using Dulcepastel.Models.utility.interfaces;
@@ -21,26 +22,39 @@ namespace Dulcepastel.Controllers.cliente
             _transformable = transformable;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string data = "", string param = "", bool isFecha = false)
         {
             if (Usuario.User == null) return RedirectToAction("Index", "Login");
-            return View();
+            return View(_clienteRepository.Find(data, param, isFecha));
         }
 
         [HttpPost]
-        public IActionResult? Action(string accion, Cliente client, string data = "", string param = "", bool isFecha = false)
+        public IActionResult? Action(string accion, 
+            [Bind(
+                "Id", 
+                "Nombre", 
+                "Apellido", 
+                "TipoDocId",
+                "NroDoc",
+                "Direccion",
+                "Celular",
+                "TelFijo",
+                "Email",
+                "fNacimiento"
+            )] 
+            Cliente client, 
+            string data = "", string param = "", bool isFecha = false)
         {
+            Console.WriteLine(client.FNacimiento);
             if (Usuario.User == null) return RedirectToAction("Index", "Login");
-            switch (accion)
+
+            if (accion == "1")
             {
-                case "1":
-                    this.Insert(client);
-                    break;
-                case "2":
-                    this._clienteRepository.Find(data, param, isFecha);
-                    break;
+                return this.Insert(client);
+            }else
+            {
+                return this.Index(data, param, isFecha);
             }
-            return RedirectToAction("Index");
         }
 
         [HttpPost]

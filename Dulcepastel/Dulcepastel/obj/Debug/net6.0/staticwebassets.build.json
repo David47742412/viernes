@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TPYYfoMX44qz+KY8dHDYB39OPEbuqqJu493IcMxcYyQ=",
+  "Hash": "wi246GYMtL3sBsZrB5aBvaVhFF7g1MpP/ZKureHo0nw=",
   "Source": "Dulcepastel",
   "BasePath": "_content/Dulcepastel",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "Dulcepastel\\wwwroot",
+      "Name": "Dulcepastel/wwwroot",
       "Source": "Dulcepastel",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Dulcepastel.styles.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/obj/Debug/net6.0/scopedcss/bundle/Dulcepastel.styles.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/obj/Debug/net6.0/scopedcss/bundle/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "Dulcepastel.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Dulcepastel.styles.css"
+      "OriginalItemSpec": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/obj/Debug/net6.0/scopedcss/bundle/Dulcepastel.styles.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Dulcepastel.bundle.scp.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/obj/Debug/net6.0/scopedcss/projectbundle/Dulcepastel.bundle.scp.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/obj/Debug/net6.0/scopedcss/projectbundle/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "Dulcepastel.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Dulcepastel.bundle.scp.css"
+      "OriginalItemSpec": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/obj/Debug/net6.0/scopedcss/projectbundle/Dulcepastel.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\css\\site.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/css/site.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -65,13 +65,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\site.css"
+      "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\css\\style\\Cliente\\clienteStyle.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/css/style/Cliente/clienteStyle.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "css/style/Cliente/clienteStyle.css",
       "AssetKind": "All",
@@ -82,13 +82,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\style\\Cliente\\clienteStyle.css"
+      "OriginalItemSpec": "wwwroot/css/style/Cliente/clienteStyle.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\css\\style\\Login\\loginStyle.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/css/style/Login/loginStyle.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "css/style/Login/loginStyle.css",
       "AssetKind": "All",
@@ -99,13 +99,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\style\\Login\\loginStyle.css"
+      "OriginalItemSpec": "wwwroot/css/style/Login/loginStyle.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\favicon.ico",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/favicon.ico",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -116,13 +116,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
+      "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\OFL.txt",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/OFL.txt",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/OFL.txt",
       "AssetKind": "All",
@@ -133,13 +133,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\OFL.txt"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/OFL.txt"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-Black.ttf",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/Poppins-Black.ttf",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/Poppins-Black.ttf",
       "AssetKind": "All",
@@ -150,13 +150,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-Black.ttf"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/Poppins-Black.ttf"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-BlackItalic.ttf",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/Poppins-BlackItalic.ttf",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/Poppins-BlackItalic.ttf",
       "AssetKind": "All",
@@ -167,13 +167,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-BlackItalic.ttf"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/Poppins-BlackItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-Bold.ttf",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/Poppins-Bold.ttf",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/Poppins-Bold.ttf",
       "AssetKind": "All",
@@ -184,13 +184,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-Bold.ttf"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/Poppins-Bold.ttf"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-BoldItalic.ttf",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/Poppins-BoldItalic.ttf",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/Poppins-BoldItalic.ttf",
       "AssetKind": "All",
@@ -201,13 +201,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-BoldItalic.ttf"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/Poppins-BoldItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-ExtraBold.ttf",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/Poppins-ExtraBold.ttf",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/Poppins-ExtraBold.ttf",
       "AssetKind": "All",
@@ -218,13 +218,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-ExtraBold.ttf"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/Poppins-ExtraBold.ttf"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-ExtraBoldItalic.ttf",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/Poppins-ExtraBoldItalic.ttf",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/Poppins-ExtraBoldItalic.ttf",
       "AssetKind": "All",
@@ -235,13 +235,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-ExtraBoldItalic.ttf"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/Poppins-ExtraBoldItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-ExtraLight.ttf",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/Poppins-ExtraLight.ttf",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/Poppins-ExtraLight.ttf",
       "AssetKind": "All",
@@ -252,13 +252,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-ExtraLight.ttf"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/Poppins-ExtraLight.ttf"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-ExtraLightItalic.ttf",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/Poppins-ExtraLightItalic.ttf",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/Poppins-ExtraLightItalic.ttf",
       "AssetKind": "All",
@@ -269,13 +269,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-ExtraLightItalic.ttf"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/Poppins-ExtraLightItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-Italic.ttf",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/Poppins-Italic.ttf",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/Poppins-Italic.ttf",
       "AssetKind": "All",
@@ -286,13 +286,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-Italic.ttf"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/Poppins-Italic.ttf"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-Light.ttf",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/Poppins-Light.ttf",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/Poppins-Light.ttf",
       "AssetKind": "All",
@@ -303,13 +303,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-Light.ttf"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/Poppins-Light.ttf"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-LightItalic.ttf",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/Poppins-LightItalic.ttf",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/Poppins-LightItalic.ttf",
       "AssetKind": "All",
@@ -320,13 +320,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-LightItalic.ttf"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/Poppins-LightItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-Medium.ttf",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/Poppins-Medium.ttf",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/Poppins-Medium.ttf",
       "AssetKind": "All",
@@ -337,13 +337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-Medium.ttf"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/Poppins-Medium.ttf"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-MediumItalic.ttf",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/Poppins-MediumItalic.ttf",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/Poppins-MediumItalic.ttf",
       "AssetKind": "All",
@@ -354,13 +354,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-MediumItalic.ttf"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/Poppins-MediumItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-Regular.ttf",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/Poppins-Regular.ttf",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/Poppins-Regular.ttf",
       "AssetKind": "All",
@@ -371,13 +371,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-Regular.ttf"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/Poppins-Regular.ttf"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-SemiBold.ttf",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/Poppins-SemiBold.ttf",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/Poppins-SemiBold.ttf",
       "AssetKind": "All",
@@ -388,13 +388,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-SemiBold.ttf"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/Poppins-SemiBold.ttf"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-SemiBoldItalic.ttf",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/Poppins-SemiBoldItalic.ttf",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/Poppins-SemiBoldItalic.ttf",
       "AssetKind": "All",
@@ -405,13 +405,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-SemiBoldItalic.ttf"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/Poppins-SemiBoldItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-Thin.ttf",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/Poppins-Thin.ttf",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/Poppins-Thin.ttf",
       "AssetKind": "All",
@@ -422,13 +422,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-Thin.ttf"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/Poppins-Thin.ttf"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\fonts\\poppins\\Poppins-ThinItalic.ttf",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/fonts/poppins/Poppins-ThinItalic.ttf",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "fonts/poppins/Poppins-ThinItalic.ttf",
       "AssetKind": "All",
@@ -439,13 +439,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fonts\\poppins\\Poppins-ThinItalic.ttf"
+      "OriginalItemSpec": "wwwroot/fonts/poppins/Poppins-ThinItalic.ttf"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\js\\clientes\\clientesFind.js",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/js/clientes/clientesFind.js",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "js/clientes/clientesFind.js",
       "AssetKind": "All",
@@ -456,13 +456,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\clientes\\clientesFind.js"
+      "OriginalItemSpec": "wwwroot/js/clientes/clientesFind.js"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\js\\login\\login.js",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/js/login/login.js",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "js/login/login.js",
       "AssetKind": "All",
@@ -473,13 +473,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\login\\login.js"
+      "OriginalItemSpec": "wwwroot/js/login/login.js"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\js\\site.js",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/js/site.js",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -490,13 +490,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
+      "OriginalItemSpec": "wwwroot/js/site.js"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -507,13 +507,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -524,13 +524,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -541,13 +541,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -558,13 +558,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -575,13 +575,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -592,13 +592,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -609,13 +609,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -626,13 +626,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -643,13 +643,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -660,13 +660,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -677,13 +677,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -694,13 +694,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -711,13 +711,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -728,13 +728,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -745,13 +745,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -762,13 +762,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -779,13 +779,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -796,13 +796,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -813,13 +813,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -830,13 +830,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -847,13 +847,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -864,13 +864,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -881,13 +881,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -898,13 +898,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -915,13 +915,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -932,13 +932,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -949,13 +949,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -966,13 +966,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -983,13 +983,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1000,13 +1000,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1017,13 +1017,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1034,13 +1034,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1051,13 +1051,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1068,13 +1068,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1085,13 +1085,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1102,13 +1102,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1119,13 +1119,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1136,13 +1136,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1153,13 +1153,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1170,13 +1170,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1187,13 +1187,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1204,13 +1204,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1221,13 +1221,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1238,13 +1238,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/bootstrap/LICENSE",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1255,13 +1255,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
+      "OriginalItemSpec": "wwwroot/lib/bootstrap/LICENSE"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1272,13 +1272,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1289,13 +1289,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1306,13 +1306,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1323,13 +1323,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1340,13 +1340,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1357,13 +1357,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1374,13 +1374,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/jquery-validation/LICENSE.md",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1391,13 +1391,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
+      "OriginalItemSpec": "wwwroot/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/jquery/dist/jquery.js",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1408,13 +1408,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.js"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/jquery/dist/jquery.min.js",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1425,13 +1425,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
+      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/jquery/dist/jquery.min.map",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1442,13 +1442,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
+      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/lib/jquery/LICENSE.txt",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1459,13 +1459,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+      "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\resource\\imgLogin.jpg",
+      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/resource/imgLogin.jpg",
       "SourceId": "Dulcepastel",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
       "BasePath": "_content/Dulcepastel",
       "RelativePath": "resource/imgLogin.jpg",
       "AssetKind": "All",
@@ -1476,7 +1476,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\resource\\imgLogin.jpg"
+      "OriginalItemSpec": "wwwroot/resource/imgLogin.jpg"
     }
   ]
 }

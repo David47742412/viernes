@@ -15,7 +15,7 @@ builder.Services.AddScoped<Login>();
 builder.Services.AddScoped<ClienteTransformable>();
 builder.Services.AddScoped<UsuarioTransformable>();
 
-builder.Services.AddSingleton(DulcepastelContext.GetInstance(builder.Configuration.GetConnectionString("conexion")!));
+builder.Services.AddSingleton(DulcepastelContext.GetInstance(builder.Configuration.GetConnectionString("conexionDocker")!));
 builder.Services.AddMvc().AddRazorPagesOptions(options =>
 {
     options.RootDirectory = "/Login";

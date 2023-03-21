@@ -36,17 +36,16 @@ public class Cliente : IGeneric<Cliente, GenericView>
     [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _email;
     [Required(ErrorMessage = "Este Campo es Requerido")]
-    private DateTime? _fNacimiento;
-    private string? _iduserUpd;
+    private string? _fNacimiento;
 
     public Cliente() {}
 
     public List<GenericView> Find(string data, string param, bool isFecha = false)
     {
-        List<GenericView> genericList = new List<GenericView>();
-        var generic = new GenericView();
+        var genericList = new List<GenericView>();
+        GenericView generic;
         using var connection = new SqlConnection(DulcepastelContext.Context);
-        using var command = new SqlCommand("SP_VIEW_CLIENTES", connection);
+        using var command = new SqlCommand("SP_VIEW_CLIENTE", connection);
         command.CommandType = CommandType.StoredProcedure;
 
         if (!data.IsNullOrEmpty() && !param.IsNullOrEmpty() && isFecha == false)
@@ -68,10 +67,11 @@ public class Cliente : IGeneric<Cliente, GenericView>
     public string? Insert(Cliente? objecto)
     {
         var message = "";
+        Console.WriteLine(objecto?._fNacimiento ?? "null");
         try
         {
             using var connection = new SqlConnection(DulcepastelContext.Context);
-            using var command = new SqlCommand("SP_CLIENTES", connection);
+            using var command = new SqlCommand("SP_CLIENTE", connection);
             command.CommandType = CommandType.StoredProcedure;
             command.Parameters.Add("@Opc", SqlDbType.Char).Value = "N";
             command.Parameters.Add("@Cliente_id", SqlDbType.VarChar).Value = "_";
@@ -83,7 +83,7 @@ public class Cliente : IGeneric<Cliente, GenericView>
             command.Parameters.Add("@Celular", SqlDbType.VarChar).Value = objecto?._celular ?? "";
             command.Parameters.Add("@TelfFijo", SqlDbType.VarChar).Value = objecto?._telFijo ?? "";
             command.Parameters.Add("@email", SqlDbType.VarChar).Value = objecto?._email ?? "";
-            command.Parameters.Add("@f_nacimiento", SqlDbType.VarChar).Value = objecto?._email ?? "";
+            command.Parameters.Add("@f_nacimiento", SqlDbType.VarChar).Value = objecto?.FNacimiento ?? "";
             command.Parameters.Add("@Usuario_id_create", SqlDbType.VarChar).Value = Usuario.User?.Id;
             command.Parameters.Add("@Usuario_id_update", SqlDbType.VarChar).Value = Usuario.User?.Id;
             command.Parameters.Add("@Msj", SqlDbType.VarChar).Value = "";
@@ -131,6 +131,5 @@ public class Cliente : IGeneric<Cliente, GenericView>
     public string? Celular { get => _celular; set => _celular = value; }
     public string? TelFijo { get => _telFijo; set => _telFijo = value; }
     public string? Email { get => _email; set => _email = value; }
-    public DateTime? FNacimiento { get => _fNacimiento; set => _fNacimiento = value; }
-    public string? IduserUpd { get => _iduserUpd; set => _iduserUpd = value; }
+    public string? FNacimiento { get => _fNacimiento; set => _fNacimiento = value; }
 }
