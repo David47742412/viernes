@@ -26,21 +26,28 @@ public class ClienteController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> Action(string accion, [FromBody] Cliente client, 
+    public async Task<IActionResult> Action(string accion, 
+        [Bind("Id", 
+            "Nombre",
+            "Apellido",
+            "TipoDocId",
+            "NroDoc",
+            "Direccion",
+            "Celular",
+            "TelFijo",
+            "Email",
+            "FNacimiento")]
+        Cliente client, 
         string data = "", string param = "", bool isFecha = false)
     {
         Console.WriteLine(client.FNacimiento);
-        switch (accion)
+        return accion switch
         {
-            case "1":
-                return await this.Insert(client);
-            case "2":
-                return await this.Update(client);
-            case "3":
-                return await this.Delete(client.Id!);
-            default:
-                return this.Index(data, param, isFecha);
-        }
+            "1" => await Insert(client),
+            "2" => await Update(client),
+            "3" => await Delete(client.Id!),
+            _ => RedirectToAction("Index", "Cliente")
+        };
     }
 
     [HttpPost]

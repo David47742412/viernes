@@ -20,6 +20,8 @@
 
   <ItemGroup>
     <Folder Include="Controllers\ocupacion" />
+    <Folder Include="Views\Ocupacion" />
+    <Folder Include="Views\TipoDocumento" />
   </ItemGroup>
 
 </Project>

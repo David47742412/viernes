@@ -11,11 +11,11 @@ public class TipoDocumentoController : Controller
     {
         _tipoDocumento = tipoDocumento;
     }
-
+/*
     public IActionResult Index()
     {
         return View(_tipoDocumento.Find("", ""));
     }
-
+*/
 }
 

@@ -1,14 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Data;
-using System.Data.Common;
-using Dulcepastel.Models.usuario;
 using Dulcepastel.Models.utility.context;
 using Dulcepastel.Models.utility.cookie;
 using Dulcepastel.Models.utility.interfaces;
 using Dulcepastel.Models.utility.interfaces.transformable.cliente;
 using Dulcepastel.Models.utility.structView;
 using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 
 namespace Dulcepastel.Models.cliente;
@@ -37,7 +34,7 @@ public class Cliente : IGeneric<Cliente, GenericView>
     [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _email;
     [Required(ErrorMessage = "Este Campo es Requerido")]
-    private string? _fNacimiento;
+    private DateTime _fNacimiento;
 
     public Cliente() {}
 
@@ -69,7 +66,6 @@ public class Cliente : IGeneric<Cliente, GenericView>
     {
         var message = "";
         var user = await GetCookie.GetData(context);
-        Console.WriteLine(objecto?._fNacimiento ?? "null");
         try
         {
             using var connection = new SqlConnection(DulcepastelContext.Context);
@@ -85,7 +81,7 @@ public class Cliente : IGeneric<Cliente, GenericView>
             command.Parameters.Add("@Celular", SqlDbType.VarChar).Value = objecto?._celular ?? "";
             command.Parameters.Add("@TelfFijo", SqlDbType.VarChar).Value = objecto?._telFijo ?? "";
             command.Parameters.Add("@email", SqlDbType.VarChar).Value = objecto?._email ?? "";
-            command.Parameters.Add("@f_nacimiento", SqlDbType.VarChar).Value = objecto?.FNacimiento ?? "";
+            command.Parameters.Add("@f_nacimiento", SqlDbType.DateTime).Value = objecto?.FNacimiento;
             command.Parameters.Add("@Usuario_id_create", SqlDbType.VarChar).Value = user.Id;
             command.Parameters.Add("@Usuario_id_update", SqlDbType.VarChar).Value = user.Id;
             command.Parameters.Add("@Msj", SqlDbType.VarChar).Value = "";
@@ -132,5 +128,5 @@ public class Cliente : IGeneric<Cliente, GenericView>
     public string? Celular { get => _celular; set => _celular = value; }
     public string? TelFijo { get => _telFijo; set => _telFijo = value; }
     public string? Email { get => _email; set => _email = value; }
-    public string? FNacimiento { get => _fNacimiento; set => _fNacimiento = value; }
+    public DateTime FNacimiento { get => _fNacimiento; set => _fNacimiento = value; }
 }
