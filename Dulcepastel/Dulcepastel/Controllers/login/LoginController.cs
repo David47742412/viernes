@@ -1,43 +1,41 @@
-﻿using Azure;
-using Dulcepastel.Models.usuario;
+﻿using System.Security.Claims;
+using Dulcepastel.Models.utility.jwt;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.VisualStudio.Debugger.Contracts.HotReload;
 
 namespace Dulcepastel.Controllers.Login;
 
+[AutoValidateAntiforgeryToken]
 public class LoginController : Controller
 {
 
-    private readonly Models.login.Login _login;
-
-    public LoginController(Models.login.Login login)
-    {
-        _login = login;
-    }
+    private readonly Models.login.Login _login = new();
 
     [HttpGet]
     public IActionResult Index()
     {
-        if (Usuario.User != null)
-        {
-            return RedirectToAction("Index", "Home", Usuario.User);
-        }
+        if (HttpContext.User.Identity is { IsAuthenticated: true })
+            return RedirectToAction("Index", "Home");
         return View();
     }
 
     [HttpPost]
-    public IActionResult Login(Models.login.Login user)
+    public async Task<IActionResult> Login(Models.login.Login user)
     {
-        Usuario? usuario = _login.IsValidUser(user);
-
-        if (usuario is null)
+        var usuario = _login.IsValidUser(user);
+        if (usuario is null) return RedirectToAction("Index", "Login");
+        var data = JwtConfig.CreateToken(usuario);
+        var authproperties = new AuthenticationProperties
         {
-            ModelState.AddModelError("", "Error Credenciales no validas");
-            return RedirectToAction("Index", "Login");
-        }
-
-        Usuario.User = usuario;
-        return RedirectToAction("Index", "Home", usuario);
+            IsPersistent = true,
+            AllowRefresh = true
+        };
+        await HttpContext.SignInAsync(
+            CookieAuthenticationDefaults.AuthenticationScheme, 
+            new ClaimsPrincipal(new ClaimsIdentity(new List<Claim>
+                    { new (ClaimTypes.Name, data), },
+                CookieAuthenticationDefaults.AuthenticationScheme)), authproperties);
+        return RedirectToAction("Index", "Home");
     }
 }

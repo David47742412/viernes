@@ -3,6 +3,7 @@ using System.Data;
 using System.Data.Common;
 using Dulcepastel.Models.usuario;
 using Dulcepastel.Models.utility.context;
+using Dulcepastel.Models.utility.cookie;
 using Dulcepastel.Models.utility.interfaces;
 using Dulcepastel.Models.utility.interfaces.transformable.cliente;
 using Dulcepastel.Models.utility.structView;
@@ -64,9 +65,10 @@ public class Cliente : IGeneric<Cliente, GenericView>
         return genericList;
     }
     
-    public string? Insert(Cliente? objecto)
+    public async Task<string?> Insert(Cliente? objecto, HttpContext context)
     {
         var message = "";
+        var user = await GetCookie.GetData(context);
         Console.WriteLine(objecto?._fNacimiento ?? "null");
         try
         {
@@ -84,8 +86,8 @@ public class Cliente : IGeneric<Cliente, GenericView>
             command.Parameters.Add("@TelfFijo", SqlDbType.VarChar).Value = objecto?._telFijo ?? "";
             command.Parameters.Add("@email", SqlDbType.VarChar).Value = objecto?._email ?? "";
             command.Parameters.Add("@f_nacimiento", SqlDbType.VarChar).Value = objecto?.FNacimiento ?? "";
-            command.Parameters.Add("@Usuario_id_create", SqlDbType.VarChar).Value = Usuario.User?.Id;
-            command.Parameters.Add("@Usuario_id_update", SqlDbType.VarChar).Value = Usuario.User?.Id;
+            command.Parameters.Add("@Usuario_id_create", SqlDbType.VarChar).Value = user.Id;
+            command.Parameters.Add("@Usuario_id_update", SqlDbType.VarChar).Value = user.Id;
             command.Parameters.Add("@Msj", SqlDbType.VarChar).Value = "";
             connection.Open();
             using var response = command.ExecuteReader();
@@ -95,14 +97,13 @@ public class Cliente : IGeneric<Cliente, GenericView>
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
-            throw;
+            throw new Exception(e.Message);
         }
 
         return message;
     }
 
-    public string Update(Cliente? objeto)
+    public async Task<string?> Update(Cliente? objeto, HttpContext context)
     {
         try
         {
@@ -117,7 +118,7 @@ public class Cliente : IGeneric<Cliente, GenericView>
         }
     }
 
-    public string Delete(string idUser)
+    public async Task<string?> Delete(string idUser, HttpContext context)
     {
         return "";
     }

@@ -3,7 +3,6 @@ using Dulcepastel.Models.utility.context;
 using Dulcepastel.Models.utility.interfaces;
 using Dulcepastel.Models.utility.structView;
 using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
 
 namespace Dulcepastel.Models.tipoDocumento;
 
@@ -37,17 +36,17 @@ public class TipoDocumento : IGeneric<TipoDocumento, GenericView>
         return genericList;
     }
 
-    public string? Insert(TipoDocumento? objecto)
+    public Task<string?> Insert(TipoDocumento? objecto, HttpContext context)
     {
         throw new NotImplementedException();
     }
 
-    public string Update(TipoDocumento? objeto)
+    public async Task<string?> Update(TipoDocumento? objeto, HttpContext context)
     {
         throw new NotImplementedException();
     }
 
-    public string Delete(string id)
+    public async Task<string?> Delete(string id, HttpContext context)
     {
         throw new NotImplementedException();
     }

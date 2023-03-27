@@ -7,10 +7,10 @@ public interface IGeneric<in T, TS>
 {
     List<TS> Find(string data, string param, bool isFecha = false);
 
-    string? Insert(T? objecto);
+    Task<string?> Insert(T? objecto, HttpContext context);
 
-    string Update(T? objeto);
+    Task<string?> Update(T? objeto, HttpContext context);
 
-    string Delete(string id);
+    Task<string?> Delete(string id, HttpContext context);
 
 }

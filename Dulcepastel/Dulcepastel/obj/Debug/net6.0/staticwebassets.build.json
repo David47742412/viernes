@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wi246GYMtL3sBsZrB5aBvaVhFF7g1MpP/ZKureHo0nw=",
+  "Hash": "Z1c8FDK2S71qfX+0DXaoucvORikZC9f+onOhC7f/htw=",
   "Source": "Dulcepastel",
   "BasePath": "_content/Dulcepastel",
   "Mode": "Default",
@@ -457,23 +457,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/clientes/clientesFind.js"
-    },
-    {
-      "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/js/login/login.js",
-      "SourceId": "Dulcepastel",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/",
-      "BasePath": "_content/Dulcepastel",
-      "RelativePath": "js/login/login.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/login/login.js"
     },
     {
       "Identity": "/home/askcorp/Escritorio/viernes/Dulcepastel/Dulcepastel/wwwroot/js/site.js",
