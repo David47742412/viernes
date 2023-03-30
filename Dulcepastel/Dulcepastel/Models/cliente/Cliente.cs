@@ -1,10 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Data;
+using Dulcepastel.Models.usuario;
 using Dulcepastel.Models.utility.context;
 using Dulcepastel.Models.utility.cookie;
 using Dulcepastel.Models.utility.interfaces;
-using Dulcepastel.Models.utility.interfaces.transformable.cliente;
 using Dulcepastel.Models.utility.structView;
+using Dulcepastel.Models.utility.transformable.cliente;
 using Microsoft.Data.SqlClient;
 using Microsoft.IdentityModel.Tokens;
 
@@ -15,25 +16,16 @@ public class Cliente : IGeneric<Cliente, GenericView>
 
     private readonly ClienteTransformable _transformable = new();
 
-    [Key]
+
     private string? _id;
-    [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _nombre;
-    [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _apellido;
-    [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _tipoDocId;
-    [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _nroDoc;
-    [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _direccion;
-    [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _celular;
-    [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _telFijo;
-    [Required(ErrorMessage = "Este Campo es Requerido")]
     private string? _email;
-    [Required(ErrorMessage = "Este Campo es Requerido")]
     private DateTime _fNacimiento;
 
     public Cliente() {}
@@ -41,7 +33,6 @@ public class Cliente : IGeneric<Cliente, GenericView>
     public List<GenericView> Find(string data, string param, bool isFecha = false)
     {
         var genericList = new List<GenericView>();
-        GenericView generic;
         using var connection = new SqlConnection(DulcepastelContext.Context);
         using var command = new SqlCommand("SP_VIEW_CLIENTE", connection);
         command.CommandType = CommandType.StoredProcedure;
@@ -50,43 +41,26 @@ public class Cliente : IGeneric<Cliente, GenericView>
             command.Parameters.Add($"@{param}", SqlDbType.VarChar).Value = data;
         else if (!data.IsNullOrEmpty() && !param.IsNullOrEmpty() && isFecha)
             command.Parameters.Add($"@{param}", SqlDbType.DateTime).Value = data;
-        
+
         connection.Open(); 
         using var result = command.ExecuteReader(); 
         while (result.Read())
-        { 
-            generic = _transformable.Convert(result);
-            genericList.Add(generic);
-        }
+            genericList.Add(_transformable.Convert(result));
+        
         connection.Close();
         return genericList;
     }
-    
-    public async Task<string?> Insert(Cliente? objecto, HttpContext context)
+
+    public async Task<string?> Crud(Cliente? objecto, Usuario user, char opc)
     {
         var message = "";
-        var user = await GetCookie.GetData(context);
         try
         {
-            using var connection = new SqlConnection(DulcepastelContext.Context);
-            using var command = new SqlCommand("SP_CLIENTE", connection);
-            command.CommandType = CommandType.StoredProcedure;
-            command.Parameters.Add("@Opc", SqlDbType.Char).Value = "N";
-            command.Parameters.Add("@Cliente_id", SqlDbType.VarChar).Value = "_";
-            command.Parameters.Add("@Cliente_nombre", SqlDbType.VarChar).Value = objecto?._nombre ?? "";
-            command.Parameters.Add("@Cliente_apellido", SqlDbType.VarChar).Value = objecto?._apellido ?? "";
-            command.Parameters.Add("@TipoDocId", SqlDbType.VarChar).Value = objecto?.TipoDocId ?? "01";
-            command.Parameters.Add("@NroDoc", SqlDbType.VarChar).Value = objecto?._nroDoc ?? "";
-            command.Parameters.Add("@Direccion", SqlDbType.VarChar).Value = objecto?._direccion ?? "";
-            command.Parameters.Add("@Celular", SqlDbType.VarChar).Value = objecto?._celular ?? "";
-            command.Parameters.Add("@TelfFijo", SqlDbType.VarChar).Value = objecto?._telFijo ?? "";
-            command.Parameters.Add("@email", SqlDbType.VarChar).Value = objecto?._email ?? "";
-            command.Parameters.Add("@f_nacimiento", SqlDbType.DateTime).Value = objecto?.FNacimiento;
-            command.Parameters.Add("@Usuario_id_create", SqlDbType.VarChar).Value = user.Id;
-            command.Parameters.Add("@Usuario_id_update", SqlDbType.VarChar).Value = user.Id;
-            command.Parameters.Add("@Msj", SqlDbType.VarChar).Value = "";
+            await using var connection = new SqlConnection(DulcepastelContext.Context);
+            await using var command = new SqlCommand("SP_CLIENTE", connection);
+            _transformable.ConvertSqlCommand(command, objecto, user, opc);
             connection.Open();
-            using var response = command.ExecuteReader();
+            await using var response = command.ExecuteReader();
             response.Read();
             if (response.HasRows) message = response["Msj"] as string;
             connection.Close();
@@ -97,26 +71,6 @@ public class Cliente : IGeneric<Cliente, GenericView>
         }
 
         return message;
-    }
-
-    public async Task<string?> Update(Cliente? objeto, HttpContext context)
-    {
-        try
-        {
-            using var connection = new SqlConnection(DulcepastelContext.Context);
-            using var command = new SqlCommand("SP_CLIENTES", connection);
-            
-            return "";
-        }
-        catch (Exception ex)
-        {
-            throw new Exception(ex.Message);
-        }
-    }
-
-    public async Task<string?> Delete(string idUser, HttpContext context)
-    {
-        return "";
     }
 
     public string? Id { get => _id; set => _id = value; }

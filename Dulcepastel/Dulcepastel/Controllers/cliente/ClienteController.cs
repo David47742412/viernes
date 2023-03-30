@@ -1,8 +1,11 @@
 ﻿using System.Globalization;
 using Dulcepastel.Models.cliente;
-using Dulcepastel.Models.utility.interfaces.transformable.cliente;
+using Dulcepastel.Models.usuario;
+using Dulcepastel.Models.utility.cookie;
+using Dulcepastel.Models.utility.transformable.cliente;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Dulcepastel.Controllers.cliente;
 
@@ -10,19 +13,18 @@ namespace Dulcepastel.Controllers.cliente;
 [AutoValidateAntiforgeryToken]
 public class ClienteController : Controller
 {
-    private readonly Cliente _clienteRepository;
-    private readonly ClienteTransformable _transformable;
-
-    public ClienteController(Cliente clienteRepository, ClienteTransformable transformable)
-    {
-        _clienteRepository = clienteRepository;
-        _transformable = transformable;
-    }
+    private readonly Cliente _clienteRepository = new();
+    
 
     public IActionResult Index(string data = "", string param = "", bool isFecha = false)
     {
+        if(data.IsNullOrEmpty() && param.IsNullOrEmpty() && isFecha == false)
+            return View(_clienteRepository.Find(data, param, isFecha));
 
-        return View(_clienteRepository.Find(data, param, isFecha));
+        var client = _clienteRepository.Find(data, param, isFecha);
+        if (client.Count != 0) ViewData["cliente"] = client.First();
+        return View(client);
+
     }
 
     [HttpPost]
@@ -37,46 +39,30 @@ public class ClienteController : Controller
             "TelFijo",
             "Email",
             "FNacimiento")]
-        Cliente client, 
-        string data = "", string param = "", bool isFecha = false)
+        Cliente client)
     {
-        Console.WriteLine(client.FNacimiento);
+        var user = await GetCookie.GetData(HttpContext);
         return accion switch
         {
-            "1" => await Insert(client),
-            "2" => await Update(client),
-            "3" => await Delete(client.Id!),
+            "1" => await Insert(client, user, 'N'),
+            "2" => await Insert(client, user, 'M'),
+            "3" => await Insert(client, user, 'E'),
             _ => RedirectToAction("Index", "Cliente")
         };
     }
 
     [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Insert(Cliente cliente)
+    public async Task<IActionResult> Insert(Cliente cliente, Usuario user, char opc)
     {
         try
         {
-            var message = await _clienteRepository.Insert(cliente, HttpContext);
+            var message = await _clienteRepository.Crud(cliente, user, opc);
         }
         catch (Exception ex)
         {
             throw new Exception(ex.Message);
         }
 
-        return RedirectToAction("Index", "Cliente");
-    }
-
-    [HttpPut]
-    public async Task<IActionResult> Update(Cliente client)
-    {
-        await this._clienteRepository.Update(client, HttpContext);
-        return RedirectToAction("Index", "Cliente");
-    }
-
-    [HttpDelete]
-    public async Task<IActionResult> Delete(string id)
-    {
-        await this._clienteRepository.Delete(id, HttpContext);
         return RedirectToAction("Index", "Cliente");
     }
 }

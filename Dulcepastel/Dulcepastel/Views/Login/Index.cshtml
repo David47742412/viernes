@@ -2,6 +2,9 @@
 
 @{
     Layout = null;
+    var errorLogin = TempData.ContainsKey("ErrorLogin") ? TempData["ErrorLogin"]?.ToString() : "";
+    var email = TempData.ContainsKey("EmailLogin") ? TempData["EmailLogin"]?.ToString() : "";
+    var password = TempData.ContainsKey("PasswordLogin") ? TempData["PasswordLogin"]?.ToString() : "";
 }
 
 <!doctype html>
@@ -21,16 +24,18 @@
              <p>Hola Registrarte para comenzar</p>
              <div class="formLogin">
                  <form asp-action="Login" method="post">
-                     <div class="container centerDivWithInputs PositionLabels">
+                     <div class="container centerDivWithInputs PositionLabels text-center">
+                         <div class="mb-2 text-center text-break" style="color: red">
+                             @errorLogin
+                         </div>
                          <div class="form-floating mb-2 col-md-10">
-                             <input asp-for="Email" type="email" class="form-control" id="txtEmail" placeholder=" " required>
+                             <input asp-for="Email" type="email" class="form-control" id="txtEmail"
+                                    value="@email" placeholder=" " required>
                              <label class="" asp-for="Email" for="txtEmail">Email</label>
-                             <span asp-validation-for="Email" class="text-danger"></span>
                          </div>
                          <div class="form-floating mb-4 col-md-4">
-                             <input asp-for="Password" type="password" class="form-control" id="txtPassword" placeholder=" " required>
+                             <input asp-for="Password" type="password" class="form-control" value="@password" id="txtPassword" placeholder=" " required>
                              <label class="" asp-for="Password" for="txtPassword">Contraseña</label>
-                             <span asp-validation-for="Password" class="text-danger"></span>
                          </div>
                      </div>
                      <div class="text-center">

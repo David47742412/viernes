@@ -2,7 +2,7 @@
 using System.Data;
 using Dulcepastel.Models.usuario;
 using Dulcepastel.Models.utility.context;
-using Dulcepastel.Models.utility.interfaces.transformable.usuario;
+using Dulcepastel.Models.utility.transformable.usuario;
 using Microsoft.Data.SqlClient;
 
 namespace Dulcepastel.Models.login;

@@ -8,6 +8,10 @@
     src: url("../../../fonts/poppins/Poppins-Regular.ttf");
 }
 
+* {
+    font-family: poppins-std, sans-serif;
+}
+
 .titleText h1 {
     text-align: center;
     font-family: poppins-bold, sans-serif;

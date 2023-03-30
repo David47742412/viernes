@@ -16,8 +16,6 @@ public class HomeController : Controller
     public async Task<IActionResult> Index()
     {
         var user = await GetCookie.GetData(HttpContext);
-        Console.WriteLine(user.Id);
-        Console.WriteLine(user.Email);
         return View();
     }
 

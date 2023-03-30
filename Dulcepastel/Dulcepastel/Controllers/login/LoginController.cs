@@ -24,7 +24,13 @@ public class LoginController : Controller
     public async Task<IActionResult> Login(Models.login.Login user)
     {
         var usuario = _login.IsValidUser(user);
-        if (usuario is null) return RedirectToAction("Index", "Login");
+        if (usuario is null)
+        {
+            TempData["ErrorLogin"] = "Email y contraseñas incorrectos";
+            TempData["EmailLogin"] = user.Email;
+            TempData["PasswordLogin"] = user.Password;
+            return RedirectToAction("Index", "Login");
+        }
         var data = JwtConfig.CreateToken(usuario);
         var authproperties = new AuthenticationProperties
         {
