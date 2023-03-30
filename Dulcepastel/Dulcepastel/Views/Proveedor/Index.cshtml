@@ -1,10 +1,10 @@
-﻿@using Dulcepastel.Models.tipoDocumento;
-@using Dulcepastel.Models.utility.structView;
-@model List<GenericView>
+﻿@using Dulcepastel.Models.utility.structView
+@using Dulcepastel.Models.tipoDocumento
+@model System.Collections.Generic.List<Dulcepastel.Models.utility.structView.GenericView>
 
 @{
-    ViewData["Title"] = "Clientes";
-    var client = (GenericView?) ViewData["cliente"] ?? new GenericView();
+    ViewData["Title"] = "Proveedores";
+    var proveedor = (GenericView?) ViewData["proveedor"] ?? new GenericView();
 }
 
 <!doctype html>
@@ -19,29 +19,28 @@
 </head>
 <body>
 <div class="mainTitleText">
-    <h1>Clientes</h1>
-    <p>Administración de clientes</p>
+    <h1>Proveedores</h1>
+    <p>Administración de Proveedores</p>
 </div>
 <div class="container">
-    @{
-        var listdocs = new TipoDocumento();
-        <form asp-action="Action" method="post">
+    @{ var listdocs = new TipoDocumento(); }
+        <form asp-action="Action" method="post" asp-controller="Proveedor">
             <div class="backGroundForm">
                 <div class="row g-0">
                     <div class="form-floating mb-2 col-md-3 splitComponents">
-                        <input name="Id" type="text" class="form-control" value="@client.Value1" id="txtId" placeholder=" " disabled>
+                        <input name="Id" type="text" class="form-control" value="@proveedor.Value1" id="txtId" placeholder=" " disabled>
                         <label class="" for="txtId">Código</label>
                     </div>
                     <div class="form-floating mb-2 col-md-3 splitComponents">
-                        <input name="Nombre" type="text" class="form-control" value="@client.Value2" id="txtNombre" placeholder=" " required>
-                        <label class="" for="txtNombre">Nombre</label>
+                        <input name="Ruc" type="text" class="form-control" value="@proveedor.Value2" id="txtNombre" placeholder=" " required>
+                        <label class="" for="txtNombre">N° de Ruc</label>
                     </div>
                     <div class="form-floating mb-2 col-md-3 splitComponents">
-                        <input name="Apellido" type="text" class="form-control" value="@client.Value3" id="txtApellido" placeholder=" " required>
-                        <label for="txtApellido">Apellido</label>
+                        <input name="Ncomercial" type="text" class="form-control" value="@proveedor.Value3" id="txtApellido" placeholder=" " required>
+                        <label for="txtApellido">Nombre Comercial</label>
                     </div>
                     <div class="form-floating mb-2 col-md-3 splitComponents">
-                        @foreach (var items in listdocs.Find("", "").Where(td => td.Value2 != "RUC"))
+                        @foreach (var items in listdocs.Find("", "").Where(td => td.Value2 != "DNI"))
                         {
                             <select name="TipoDocId" type="text" class="form-control" id="listTipoDocId" placeholder=" " required>
                                 <option value="@items.Value1">
@@ -52,32 +51,34 @@
                         }
                     </div>
                     <div class="form-floating mb-2 col-md-3 splitComponents">
-                        <input name="NroDoc" type="text" class="form-control" value="@client.Value5" id="txtNroDoc" placeholder=" " required>
-                        <label class="" for="txtNroDoc">N° documento</label>
+                        <input name="RazonSocial" type="text" class="form-control" value="@proveedor.Value4" id="txtNroDoc" placeholder=" " required>
+                        <label class="" for="txtNroDoc">Razon Social</label>
                     </div>
                     <div class="form-floating mb-2 col-md-3 splitComponents">
-                        <input name="Direccion" type="text" class="form-control" value="@client.Value6" id="txtDireccion" placeholder=" " required>
-                        <label class="" for="txtDireccion">Dirección</label>
+                        <input name="Celular" type="text" class="form-control" value="@proveedor.Value5" id="txtDireccion" placeholder=" " required>
+                        <label class="" for="txtDireccion">Celular</label>
                     </div>
                     <div class="form-floating mb-2 col-md-3 splitComponents">
-                        <input name="Celular" type="text" class="form-control" value="@client.Value7" id="txtCelular" placeholder=" " required>
-                        <label class="" for="txtCelular">Celular</label>
-                    </div>
-                    <div class="form-floating mb-2 col-md-3 splitComponents">
-                        <input name="TelFijo" type="text" class="form-control" value="@client.Value8" id="txtTelfFijo" placeholder=" " required>
+                        <input name="Telefono" type="text" class="form-control" value="@proveedor.Value6" id="txtTelfFijo" placeholder=" " required>
                         <label class="form-label" for="txtTelfFijo">Telefono Fijo</label>
                     </div>
                     <div class="form-floating mb-2 col-md-3 splitComponents">
-                        <input name="Email" type="text" class="form-control" value="@client.Value9" id="txtEmail" placeholder=" " required>
-                        <label class="form-label" for="txtEmail">Email</label>
+                        <input name="PaginaWeb" type="text" class="form-control" value="@proveedor.Value7" id="txtmil" placeholder=" " required>
+                        <label class="form-label" for="txtEail">Pagina web</label>
                     </div>
-                    @{
-                        var fecha = client.Value10?.ToString("yyyy-MM-dd");
-                        fecha = fecha == null ? default : fecha;}
                     <div class="form-floating mb-2 col-md-3 splitComponents">
-                        <input name="FNacimiento" type="date" class="form-control" value="@fecha" id="dtFNacimiento"/>
-                        <label for="dtFNacimiento" class="form-label">Fecha de Nacimiento</label>
+                        <input name="Email" type="text" class="form-control" value="@proveedor.Value8" id="txtmal" placeholder=" " required>
+                        <label class="form-label" for="txtEail">Email</label>
                     </div>
+                    <div class="form-floating mb-2 col-md-3 splitComponents">
+                        <input name="Direccion" type="text" class="form-control" value="@proveedor.Value9" id="txtEail" placeholder=" " required>
+                        <label class="form-label" for="txtEail">Direccion</label>
+                    </div>
+                    <div class="form-floating mb-2 col-md-3 splitComponents">
+                        <input name="Descripcion" type="text" class="form-control" value="@proveedor.Value10" id="txtEmil" placeholder=" " required>
+                        <label class="form-label" for="txtEail">Descripción</label>
+                    </div>
+                    
                     <div class="form-floating mb-2 col-md-3 splitComponents">
                         <select name="accion" type="text" class="form-control" id="listAccion" placeholder=" " required>
                             <option value="1">
@@ -98,8 +99,7 @@
                 <button class="btn btn-primary styleButtonAction" value="Insert" type="submit" id="btnAccion">Registrar</button>
             </div>
         </form>
-    }
-    <form asp-action="Index" asp-controller="Cliente">
+        <form asp-action="Index" asp-controller="Proveedor">
         <div>
             <div class="row g-0">
                 <div class="form-floating mb-2 col-md-3 paddingTopFind" style="width: 16%; margin-bottom: 2.5em">
@@ -107,32 +107,32 @@
                         <option value="Id">
                             código
                         </option>
-                        <option value="Nombre">
-                            nombre
+                        <option value="Ruc">
+                            Numero de Ruc
                         </option>
-                        <option value="Apellido">
-                            apellido
+                        <option value="NComercial">
+                            Nombre Comercial
                         </option>
-                        <option value="DesDocument">
-                            tipo de Documento
-                        </option>
-                        <option value="NroDoc">
-                            n° Documento
-                        </option>
-                        <option value="Direccion">
-                            dirección
+                        <option value="RazonSocial">
+                            Razon Social
                         </option>
                         <option value="Celular">
-                            celular
+                            Celular
                         </option>
-                        <option value="TelfFijo">
-                            telefono Fijo
+                        <option value="Telefono">
+                            Telefono
+                        </option>
+                        <option value="PaginaWeb">
+                            PaginaWeb
                         </option>
                         <option value="Email">
-                            email
+                            Email
                         </option>
-                        <option value="F_NACIMIENTO">
-                            fecha de Nacimiento
+                        <option value="Direccion">
+                            Direccion
+                        </option>
+                        <option value="Descripcion">
+                            Descripcion
                         </option>
                     </select>
                     <label for="listFind">Buscar por</label>
@@ -155,31 +155,34 @@
             Código
         </th>
         <th>
-            Nombre
+            Ruc
         </th>
         <th>
-            Apellido
+            Nombre Comercial
         </th>
         <th>
-            Tipo de Documento
-        </th>
-        <th>
-            N° Documento
-        </th>
-        <th>
-            Dirección
+            Razon Social
         </th>
         <th>
             Celular
         </th>
         <th>
-            Telefono Fijo
+            Telefono
+        </th>
+        <th>
+            Pagina
         </th>
         <th>
             Email
         </th>
         <th>
-            Fecha de Nacimiento
+            Dirección
+        </th>
+        <th>
+            Descripción
+        </th>
+        <th>
+            Tipo de Documento
         </th>
     </tr>
     </thead>
@@ -216,11 +219,10 @@
                     @item.Value9
                 </td>
                 <td>
-                    @{
-                        var fecha = item.Value10?.ToString("yyyy-MM-dd");
-                        fecha = fecha == "01/01/1900" ? "no asignado" : fecha;
-                    }
-                    @fecha
+                    @item.Value10
+                </td>
+                <td>
+                    @item.Value11
                 </td>
             </tr>
         }

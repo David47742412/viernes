@@ -33,21 +33,29 @@ public class Cliente : IGeneric<Cliente, GenericView>
     public List<GenericView> Find(string data, string param, bool isFecha = false)
     {
         var genericList = new List<GenericView>();
-        using var connection = new SqlConnection(DulcepastelContext.Context);
-        using var command = new SqlCommand("SP_VIEW_CLIENTE", connection);
-        command.CommandType = CommandType.StoredProcedure;
+        try
+        {
+            using var connection = new SqlConnection(DulcepastelContext.Context);
+            using var command = new SqlCommand("SP_VIEW_CLIENTE", connection);
+            command.CommandType = CommandType.StoredProcedure;
 
-        if (!data.IsNullOrEmpty() && !param.IsNullOrEmpty() && isFecha == false)
-            command.Parameters.Add($"@{param}", SqlDbType.VarChar).Value = data;
-        else if (!data.IsNullOrEmpty() && !param.IsNullOrEmpty() && isFecha)
-            command.Parameters.Add($"@{param}", SqlDbType.DateTime).Value = data;
+            if (!data.IsNullOrEmpty() && !param.IsNullOrEmpty() && isFecha == false)
+                command.Parameters.Add($"@{param}", SqlDbType.VarChar).Value = data;
+            else if (!data.IsNullOrEmpty() && !param.IsNullOrEmpty() && isFecha)
+                command.Parameters.Add($"@{param}", SqlDbType.DateTime).Value = data;
 
-        connection.Open(); 
-        using var result = command.ExecuteReader(); 
-        while (result.Read())
-            genericList.Add(_transformable.Convert(result));
-        
-        connection.Close();
+            connection.Open();
+            using var result = command.ExecuteReader();
+            while (result.Read())
+                genericList.Add(_transformable.Convert(result));
+
+            connection.Close();
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.Message);
+        }
+
         return genericList;
     }
 
