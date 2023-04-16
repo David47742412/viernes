@@ -1,46 +1,51 @@
 ﻿using Microsoft.Data.SqlClient;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
+using Dulcepastel.Models.utility.context;
+using Dulcepastel.Models.utility.interfaces;
+using Dulcepastel.Models.utility.structView;
+using Dulcepastel.Models.utility.transformable.usuario;
 
 namespace Dulcepastel.Models.usuario;
 
-public class Usuario
-{ 
-    [Key]
+public class Usuario : IGeneric<Usuario, GenericView>
+{
+
+    private readonly UsuarioTransformable _transformable = new();
+    
     private string? _id;
-
-    [Required(ErrorMessage = "El Campo Nombre es obligatorio")]
     private string? _nombre;
-    
-    [Required(ErrorMessage = "El Campo Apellido es obligatorio")]
     private string? _apellido;
-    
-    [Required(ErrorMessage = "El Campo Celular es obligatorio")]
     private string? _celular;
-    
-    [Required(ErrorMessage = "El Campo N° Documento es obligatorio")]
     private string? _nroDoc;
-
-    [Required(ErrorMessage = "El Campo Email es obligatorio")]
     private string? _email;
-
-    [Required(ErrorMessage = "El Campo Password es obligatorio")]
     private string? _password;
-    
-    [Required(ErrorMessage = "El Campo Tipo de Documento es obligatorio")]
     private string? _idTipoDoc;
-    
-    [Required(ErrorMessage = "El Campo Estado es obligatorio")]
     private string? _idEstado;
-
-    [Required(ErrorMessage = "El Campo Foto es obligatorio")]
     private string? _foto;
-    
-    [Required(ErrorMessage = "El Campo Ocupacion es obligatorio")]
     private string? _ocupacion;
-
-    [Required(ErrorMessage = "El Campo Fecha de nacimiento es obligatorio")]
     private string? _fchNacimiento;
+    
+    public List<GenericView> Find(string data, string param, bool isFecha = false)
+    {
+        var lts = new GenericView();
+        try
+        {
+            using var connection = new SqlConnection(DulcepastelContext.Context);
+            using var command = new SqlCommand("SP_VIEW_USUARIO", connection);
+            
+        }
+        catch (Exception ex)
+        {
+            
+        }
+        throw new NotImplementedException();
+    }
+
+    public Task<string?> Crud(Usuario? objecto, Usuario user, char opc)
+    {
+        throw new NotImplementedException();
+    }
 
     public string? Id
     {

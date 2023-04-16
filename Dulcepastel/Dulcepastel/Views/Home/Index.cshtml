@@ -1,4 +1,8 @@
-﻿
+﻿@using Dulcepastel.Models.usuario
+@{
+    Layout = "_Layout";
+    var user = (Usuario?)ViewData["usuario"];
+}
 <div class="text-center">
-    <h1>Bienvenido de vuelta</h1>
+    <h1>Bienvenido de vuelta @user?.Nombre</h1>
 </div>

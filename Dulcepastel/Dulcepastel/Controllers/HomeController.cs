@@ -15,7 +15,8 @@ public class HomeController : Controller
     [HttpGet]
     public async Task<IActionResult> Index()
     {
-        var user = await GetCookie.GetData(HttpContext);
+        var userLogin = await GetCookie.GetData(HttpContext);
+        
         return View();
     }
 

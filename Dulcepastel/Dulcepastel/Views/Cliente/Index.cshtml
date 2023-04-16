@@ -217,8 +217,8 @@
                 </td>
                 <td>
                     @{
-                        var fecha = item.Value10?.ToString("yyyy-MM-dd");
-                        fecha = fecha == "01/01/1900" ? "no asignado" : fecha;
+                        var fecha = item.Value10?.ToString();
+                        fecha = fecha == "01/01/1900 00:0000:00" ? "no asignado" : fecha;
                     }
                     @fecha
                 </td>
