@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tM8EB8Pxrq4wvWjOf2R4deZB/nrB0vj2sjFFGlyiITc=",
+  "Hash": "o9uJO+M0FLiERFlXqUkIZ9vkJbKqK2MHlr3TPnHvVIs=",
   "Source": "Dulcepastel",
   "BasePath": "_content/Dulcepastel",
   "Mode": "Default",
@@ -1460,6 +1460,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\resource\\imgLogin.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\temp\\Dulcepastel.xlsx",
+      "SourceId": "Dulcepastel",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\askcorp\\Desktop\\viernes\\Dulcepastel\\Dulcepastel\\wwwroot\\",
+      "BasePath": "_content/Dulcepastel",
+      "RelativePath": "temp/Dulcepastel.xlsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\temp\\Dulcepastel.xlsx"
     }
   ]
 }

@@ -19,4 +19,5 @@ public struct GenericView
     public dynamic? Value13 { get; set; }
     public dynamic? Value14 { get; set; }
     public dynamic? Value15 { get; set; }
+    public dynamic? Value16 { get; set; }
 }
